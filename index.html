@@ -1,5 +1,6 @@
 <!doctype html>
-<html itemscope="" itemtype="http://schema.org/Event"><head>
+<html itemscope="" itemtype="http://schema.org/Event" ng-app="dff">
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="DevFestMT">
@@ -7,14 +8,14 @@
   <link href="https://plus.google.com/111439872924209508980" rel="publisher">
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
   
-  <link href="devfest.css" rel="stylesheet" type="text/css">
-  <link href="/bootstrap.min.css" rel="stylesheet" type="text/css">  
+  <link href="css/devfest.css" rel="stylesheet" type="text/css">
+  <link href="vendor/bootstrap.min.css" rel="stylesheet" type="text/css">
   <meta itemprop="name" content="DevFest MT">
   
   <!-- <meta itemprop="image" content="devsummit/images/chrome-dev-summit-masthead.png"> -->
   <!-- TODO Replace with an appropriate image -->
 
-  <title>DevFest MT 2013</title>
+  <title>Family DevFest 2014</title>
   
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -22,465 +23,45 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-98864-4', 'devfestmt.com');
-  ga('send', 'pageview');
+//  ga('create', 'UA-98864-4', 'devfestmt.com');
+//  ga('send', 'pageview');
 </script>
+  <script src="vendor/angular.js"></script>
 
 </head>
-<body>
-  <header>
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="#whyattend">Why Attend?</a></li>
-          <li><a href="#sessions">Sessions</a></li>
-          <li><a href="#agenda">Agenda</a></li>
-          <li><a href="#travelandlocation">Travel &amp; Location</a></li>
-          <!--<li><a href="#format">Format</a></li>-->
-        </ul>
-      </nav>
+<body ng-controller="MainCtrl">
+  <header ng-include="'partials/header.html'"></header>
 
-      <div class="aux">
-        <div class="social">
-          <div class="social-wrapper">
-            <!--
-            <div class="g-plusone" data-annotation="none"></div>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-text="Connect with Chrome engineers and web devs at Chrome Dev Summit." data-via="chromiumdev" data-count="none">Tweet</a>
-            -->
-          </div>
-        </div>
-        <div class="register">
-          <a href="#buytickets">
-            Get Tickets
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
   <div class="spacer">
-  <section class="white">
-    <div class="container">
-      <img src="gdgmso.png" id="gdglogo">
-      <h1>DevFest MT</h1>
-      <p class="subtitle">
-        Missoula, MT<br>
-        <span itemprop="startDate" content="2013-11-2">November 2</span> - <span itemprop="endDate" content="2013-11-3">3</span>, 2013.
-      </p>
-      <div class="col-md-5">
-        <br>
-        <p>
-          A local effort by
-          <ul><li>The <a href="http://gplus.to/gdgmso">Missoula Google Developer Group (GDG)</a></li>
-          <li><a href="http://umt.acm.org">The UM Computer Science Club</a></li>
-          <li>The UM Entrepreneurship Club</li>
-          <li><a href="http://MobileMindsLLC.com">Mobile Minds LLC</a></li>
-          <li><a href="http://montanaprogrammers.com">Montana Programmers</a></li>
-          <li><a href="http://mtwda.org">Montana Web Designers &amp; Developers Assoc</a></li>
 
-        </ul>
-</p>
-        
-        <p>Join the community at <a href="http://events.bizzabo.com/DevFestMT">http://events.bizzabo.com/DevFestMT</a></p>
-        
-      </div>
-    </div>
-    
-  </section>
+    <section class="white" ng-include="'partials/helpers.html'"></section>
 
-  <section class="blue">
-    <div class="container">
-    
-      <h2>Agenda</h2>
-      <div class="speaker-box bordered-shadowed">
-        <a name="agenda"></a>
-        <h3>Day 1 - Nov 2nd</h3>
+    <section class="blue" ng-include="'partials/schedule.html'"></section>
 
-        <table class="table table-bordered table-striped">
-          <tbody><tr>
-            <th>Time</th>
-            <th>Room 123</th>
-            <th>Room 124</th>
-          </tr>
-          <tr>
-            <td>8:00am - 9:00am</td>
-            <td colspan="2">Registration Check-in</td>
-          </tr>
-          <tr>
-            <td>9:00am - 10:30am</td>
-            <td colspan="2">Keynote: Rob Irizarry</td>
-          </tr>
-          
-          
-          <tr>
-            <td>11am - noon</td>
-            <td colspan="2">Teaching Programming Online: Pamela Fox</td>
-          </tr><tr>
-            <td>12:00pm - 1:00pm</td>
-            <td colspan="2">Lunch</td>
-          </tr>
-          <tr>
-            <td>1:00pm - 2:30pm</td>
-            <td>Future of Education Panel: Martin and others</td>
-            <td>Development workflow w/ GruntJS: Luiz Lopes</td>
-          </tr><tr>
-            <td>2:45pm - 3:30pm</td>
-            <td colspan="2">Intro to Mobile App Development for Education: Josh Austin</td>
-          </tr>
-          
-          <tr>
-            <td>3:15pm - 4:30pm</td>
-            <td colspan="2">Getting Started with Google App Engine: Jeff Lutzenberger</td>
-          </tr>
-          <tr>
-            <td>4:30pm - 5:30pm</td>
-            <td colspan="2">Google Glass: Jason Kruger</td>
-          </tr>
-          <tr>
-            <td>5:30</td>
-            <td colspan="2">Day 1 Wrap up, Prizes Drawing</td>
-          </tr>
-        </tbody></table>
+    <section class="gray" ng-include="'partials/why-attend.html'"></section>
 
-        <h3>Day 2 - Nov 3rd</h3>
-        
-        <table class="table table-bordered table-striped">
-          <tbody><tr>
-            <th>Time</th>
-            <th>Room 123</th>
-            <th>Room 125</th>
-            <th>Room 124</th>
-          </tr>
-          <tr>
-            <td>9:00am - 10:00am</td>
-            <td>Day 2 Intro, Team forming</td>
-            <td rowspan="2">Raspberry Pi Lab</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>10:00am - 12:30pm</td>
-            <td>
-              Independent or Guided Project Build
-              <br>
-              Backend and Mobile Front End
-            </td>
-            <td>Hands on with Google Glass</td>
-            
-          </tr>
-          <tr>
-            <td>12:30pm - 1:30pm</td>
-            <td colspan="3">Lunch</td>
-          </tr>
-          <tr>
-            <td>1:30pm - 4pm</td>
-            <td>Independent or Guided Project Build (continued)</td>
-            <td></td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>4pm -5:30pm</td>
-            <td>Wrap up &amp; Prizes</td><td></td><td></td>
-          </tr>
-        </tbody></table>
-        <p>(Agenda is still subject to change)</p>
-      </div>
-    
-      <a name="sessions"></a>
-      <h2>Sessions</h2>
-      
-        <div class="speaker-box bordered-shadowed">
-            <div class="speaker-avatar">
-                <img class="img-circle" src="irizarry.jpg" alt="Rob Irizarry">
-            </div>
-  
-            <div class="speaker-name"><a href="https://plus.google.com/107810501622053675085" target="_new">Rob Irizarry</a></div>
-            <div class="speaker-company text-muted">CodeMontana.org</div>
-            <div class="speaker-company">
-              I've spent the last three decades working with hardware and software technology in the finance, garment and automotive industries &amp; have spent the last decade engaged in pioneering multi-tenant Software as a Service for the Customer Experience market.  I've worked in and with public and private sector organizations from 10 people to the Fortune 10 building systems, processes and teams in the United States, Europe, Asia, the Middle East and South Africa and spent a decade living in Asia.
-            </div>
+    <section class="blue" ng-include="'partials/sponsors.html'"></section>
 
-            <div class="session-info">
-                <h5>Code Montana</h5>
-                <p>This presentation tells the story of CodeMontana - 
-                  How it got started &amp; how it scaled up from one student at Bozeman High School that wanted to learn software development to a statewide program to teach 1,000 Montana High School students programming.  
-                  The presentation will include faculty and students from the program, each telling part of the story...</p>
-            </div>
-        </div>
+    <section class="white" id="travelandlocation" ng-include="'partials/location.html'"></section>
 
-        <div class="speaker-box bordered-shadowed">
-          <div class="speaker-inner-box">
-            <div class="speaker-avatar">
-              <img class="img-circle" src="pamela.jpg" alt="Pamela Fox" width="126">
-            </div>
-            <div class="speaker-info">
-              <div class="speaker-name"><a href="https://plus.google.com/104906919451670502090" target="_new">Pamela Fox</a></div>
-              <div class="speaker-company text-muted">Khan Academy</div>
-              <div class="speaker-company">
-                Pamela Fox loves to learn, teach, create, and every combination of those. During the day, she creates the programming curriculum for Khan Academy, to teach the next generation of programmers. On the side, she teaches web development classes for the GirlDevelopIt San Francisco chapter. Before that, she was a frontend engineer at Coursera, a developer advocate at Google, and a graduate from USC's Computer Science Department.
-              </div>
-            </div>
-          </div>
-          <div class="session-info">
-            <h5>Teaching Programming Online</h5>
-            <p>Pamela Fox will take you behind the scenes of the programming lessons on Khan Academy and show you how we are using modern web technologies like &lt;canvas&gt;, Web Workers, &lt;audio&gt;, and getUserMedia to teach the next generation of programmers.</p>
-          </div>
-        </div>
+    <section class="blue" ng-include="'partials/after-party.html'"></section>
 
-        <div class="speaker-box bordered-shadowed">
-          <div class="speaker-inner-box">
-            <div class="speaker-avatar">
-              <img class="img-circle" src="horesji.jpg" alt="Dr. Martin Horejsi" width="126">
-            </div>
-            <div class="speaker-info">
-              <div class="speaker-name"><a>Dr. Martin Horejsi</a></div>
-              <div class="speaker-company text-muted">University of Montana</div>
-              <div class="speaker-company">
-                Dr. Martin Horejsi is currently an Associate Professor in Instructional Technology at the University of Montana in Missoula. 
+    <section class="white" ng-include="'partials/tickets.html'"></section>
 
-Horejsi's research interests include classroom applications of computer peripherals and mobile devices, digital imaging as an assessment tool, and the Internet and presentation applications in the elementary school classroom. He has made a life of using, watching, and envisioning how great education can be, especially with technology driving the dreams of teachers and students alike. He is a columnist and blogger for the National Science Teacher’s Association addressing technology and its impact across education, as well as blogging for EdView 360. He teaches many undergraduate and graduate courses about and with technology including many online courses. I am the former director of the Montana Schools e-Learning Consortium (now the Montana Digital Academy).
-              </div>
-            </div>
-          </div>
-          <div class="session-info">
-            <h5>Future of Education Panel</h5>
-            <p>
-            The Future of Educational Panel discussion brings together key players from the educational 
-            landscape who are deeply involved in STEM topics and instructional technologies. Many popular 
-            teaching models, especially those that apply or require technology are now obsolete and thus 
-            longer longer effective. Because the old models are simply outdated and should be abandoned, 
-            new and fresh perspectives are needed for effective teaching models to emerge. This discussion 
-            will jump headfirst into the critical issues facing the modern teaching/learning dynamic with 
-            special attention to educational technology, STEM, and working with innovative and creative 
-            students who often possess skills well beyond those of the teacher, and who are ready to consume 
-            content well beyond the curriculum.
-            </p>
-          </div>
-        </div>
+    <section id="conversation" ng-include="'partials/conversation.html'"></section>
 
+  </div>
 
-        <div class="speaker-box bordered-shadowed">
-          <div class="speaker-inner-box">
-            <div class="speaker-avatar">
-              <img class="img-circle" src="lutzenberger.jpg" alt="Jeff Lutzenberger" width="126">
-            </div>
-            <div class="speaker-info">
-              <div class="speaker-name"><a href="https://plus.google.com/102693277822042486867" target="_new">Jeff Lutzenberger</a></div>
-              <div class="speaker-company text-muted">WebFilings</div>
-              <div class="speaker-company">
-                 Jeff is a Product Development Manager and Platform Product Owner at WebFilings where he focuses on scalability, tasteful design and clean APIs. He received a doctorate in engineering from Montana State University for designing and fabricating novel micro-electro-mechancial systems. Jeff is fascinated by the ability of software and hardware to change lives. His software experience includes 3D rendering systems, numerical analysis and web development. 
-              </div>
-            </div>
-          </div>
-          <div class="session-info">
-            <h5>Getting Started with Google App Engine</h5>
-            <p>Google App Engine (GAE) allows developers to run software on Google's infrastructure. If you're interested in getting your software in front of customers quickly and painlessly, this talk is for you. We'll start by covering the basics of GAE including: Big Table, task queues, back ends and modules. We will then discuss how we use Google App Engine at WebFilings and conclude with a simple demo app.</p>
-          </div>
-        </div>
+  <script src="js/app.js"></script>
+  <script src="resources/activities/data.js"></script>
 
-        <div class="speaker-box bordered-shadowed">
-          <div class="speaker-inner-box">
-            <div class="speaker-avatar">
-              <img class="img-circle" src="kruger.jpg" alt="Jason Kruger" width="126">
-            </div>
-            <div class="speaker-info">
-              <div class="speaker-name"><a href="https://plus.google.com/102301603326380999009" target="_new">Jason Kruger</a></div>
-              <div class="speaker-company text-muted">JASKRU / Evermed</div>
-              <div class="speaker-company">
-                Jason is a web developer, Google Glass Explorer, and an EMT.
-                He's inspired by Champions of Humanity and volunteers 
-                a lot of time to the Gallatin County SAR, Big Sky Ski Patrol and 
-                S.L.A.M. (Support Local Artists &amp; Musicians).
-              </div>
-            </div>
-          </div>
-          <div class="session-info">
-            <h5>Google GLASS and the Mirror API</h5>
-            <p>
-            An introduction to <a href="http://www.google.com/glass/start/what-it-does/">Google GLASS</a>
-            and the Explorer program. 
-            Overview of the current developer best practices and brief introduction to the Mirror API. 
-            Wrap up with discussion of recent Glassware and their use cases.
-            
-              
-            </p>
-          </div>
-        </div><div class="speaker-box bordered-shadowed">
-          <div class="speaker-inner-box">
-            
-            <div class="speaker-info">
-              <div class="speaker-name"><a href="https://plus.google.com/118136028422509182707" target="_new">Luiz Lopes</a></div>
-              <div class="speaker-company text-muted">appendTo</div>
-              <div class="speaker-company">Luiz is a web application developer, with over 10 years of experience.  A native to Brazil, he is currently a freelancer working on various projects from small business to enterprise level applications.  He spends much of his spare time working on open source development, and is one of the creators of the ColtJS framework.</div>
-            </div>
-          </div>
-          <div class="session-info">
-            <h5>Development Workflow with GruntJS</h5>
-            <p>How to use the task-running tool, gruntjs, to automate tasks and build processes using javascript.  I'll show the audience what gruntjs is, how to get started, and a few examples of how to use it in the wild.</p>
-          </div>
-        </div>
+  <!-- Bizzabo stuff -->
+  <script type="text/javascript">(function(){var bz=document.createElement("script");bz.type="text/javascript";bz.async=true;bz.src="//www.bizzabo.com/widgets/community/community.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(bz,s);})();</script>
 
-
-      <div class="clear"></div>
-      
-    </div>
-  </section>
-
-  <div class="clear"></div>
-<a name="whyattend"></a>
-  <section class="gray">
-    <div class="container">
-      
-      <h2>Why Attend?</h2>
-      
-        <div class="pull-right prizes">
-          
-        </div>
-
-        <p itemprop="description">
-          Connect with developers, designers, entrepreneurs, teachers and students.
-          We're getting together to push tech forward in Missoula and in education.
-        </p>
-        <p>
-          We’ll host a full day of tech talks on November 2nd from 8AM to 6PM. Then join up later that evening around 8PM for a casual after party.
-          On day 2 put your newfound knowledge to work building your first or next app. We'll have guided code labs and plenty of time for hacking. 
-          Learn how to code something cool!
-        </p>
-
-        <h4>Admission Includes:</h4>
-        <p>
-          </p><ul>
-            <li>A DevFest T-shirt, lanyard and badge</li>
-            <li>Light breakfast, coffee and <b>lunch</b> is included both days, along with snacks in the afternoon. </li>
-            <li>Great networking opportunities</li>
-            <li><b>Prizes</b> on Day 1 will be randomly drawn from paid and present attendees.</li>
-            <li>Day 2 prizes will be random and merit based on the team project. </li>
-
-            <li>Prizes Include: Nexus 4, Nexus 7, HP Chromebook 11, iPad mini, Apple TV, Chromecast</li>
-          </ul>
-        <p></p>
-
-    </div>
-  </section>
-
-  <section class="blue">
-    <div class="container">
-      <h2>Sponsored By</h2>
-      <ul>
-        <li>Google</li>
-        <li><a href="http://coehs.umt.edu/">The Phyllis J. Washington College of Education and Human Sciences</a></li>
-        <li><a href="http://montanabookstore.com/">The University of Montana Bookstore</a></li><a href="http://montanabookstore.com/">
-        </a><li><a href="http://montanabookstore.com/"></a><a href="http://webfilings.com/">WebFilings</a></li>
-        <li><a href="http://www.yourdatasmarter.com">GCS</a></li>
-        <li><a href="http://www.missoulaevents.com">Missoula Events</a></li>
-        <li><a href="http://www.missoulaindoorads.com">Missoula Indoor Ads</a></li>
-        <li><a href="http://stores.bestbuy.com/593/">Best Buy Missoula</a></li>
-        <li><a href="http://k8tr.com/">REPLIK8TR MakerSpace</a></li>
-        
-      </ul>
-    <div>
-  </div></div></section>
-
-  <section id="travelandlocation">
-    <div class="container clear">
-      <h2>Location</h2>
-
-      <div id="mapcontainer"><iframe width="568" height="354" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=46.8626878,-113.9848835&amp;ie=UTF8&amp;t=m&amp;z=16&amp;ll=46.8626878,-113.9848835&amp;output=embed"></iframe></div>
-
-      <ul>
-        <li><h1>Missoula Montana</h1>
-        Phyllis J Washington Education Center<br>
-        University of Montana</li>
-
-      </ul>
-
-      <h2>Hotels</h2>
-      <ul>
-        <li><h1>Courtyard by Marriott</h1>
-        4559 N. Reserve Street<br>
-        Missoula, MT 59808<br>
-        Direct Phone: 406-274-9002 or Toll Free: 800-321-2211<br>
-        Fax: 406-549-5257<br>
-        <a href="http://goo.gl/9DCVZx">Book @ $89 Reduced Rate</a>
-        </li>
-
-        <li><h1>DoubleTree by Hilton</h1>
-        100 Madison, Missoula, Montana, 59802, USA<br>
-        TEL: 1-406-728-3100<br>
-        FAX: 1-406-728-2530<br>
-        Mention DevFestMT for $99 room rate!<br>
-        <a href="http://doubletree3.hilton.com/en/hotels/montana/doubletree-by-hilton-hotel-missoula-edgewater-RLMV-DT/index.html#x">Book a Room</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-
-  <section class="blue">
-    <img src="flathead.jpg" alt="Flathead Lake Brewing Co. Front" style="float: left; height: 19em; margin-right: 10px;"/>
-    <div class="container">
-      <h2>After Party</h2>
-
-      <p>
-        Nov 2nd is Día de Muertos (Day of the Dead). Right after Day 1 of DevFest head over to the 
-        <a target="flathead" style="text-decoration:underline" href="https://www.google.com/maps/preview#!q=Flathead+Lake+Brewing+Company%2C+North+Higgins+Avenue%2C+Missoula%2C+MT&data=!1m4!1m3!1d848!2d-113.9928951!3d46.8734543!4m15!2m14!1m13!1s0x535dcc2a1af45b9f%3A0xa5c57e07770567!3m8!1m3!1d54287!2d-113.9797349!3d46.8526455!3m2!1i1920!2i955!4f13.1!4m2!3d46.873576!4d-113.992935">
-          Flathead Lake Brewing Co.</a> in downtown Missoula for a casual after party. 
-
-
-        Settle in. Maybe have some dinner or grab a drink. The first one's on us. Watch the parade from the third floor Galaxy Lounge. Stop in 6pm or later. Wear your lanyard to network like a boss. 
-      </p>
-      <p>Family, spouses, and children are welcome.</p>
-      
-    </div>
-    <img src="galaxy-full.jpg" width="100%" alt="Flathead Lake Brewing Co. Galaxy Lounge"/>
-  </section>
-  
-  <section class="white">
-    <div class="container">
-      <h2>
-        Buy Tickets
-      </h2>
-
-      <a name="buytickets"></a>
-      <div style="width:100%; text-align:left;" ><iframe  src="http://www.eventbrite.com/tickets-external?eid=8243355097&ref=etckt&v=2" frameborder="0" height="485" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-      </div>
-    </div>
-  </section>
-
-  <section id="conversation">
-    <div class="container">
-      <div class="text">
-        <a href="http://gplus.to/gdgmso" target="_blank">
-        Follow GDG Missoula on
-        </a>
-      </div>
-      <a href="http://gplus.to/gdgmso" target="_blank" class="ir googleplus">Google+</a>
-    </div>
-  </section>
-</div>
-  <script>
-    var mediaQuery = window.matchMedia("(min-width: 750px)");
-    var mediaQueryCallback = function () {
-      var m = document.getElementById('mapcontainer');
-      if (mediaQuery.matches)
-        m.innerHTML = '<iframe width="568" height="354" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=46.8626878,-113.9848835&amp;ie=UTF8&amp;t=m&amp;z=16&amp;ll=46.8626878,-113.9848835&amp;output=embed"></iframe>';
-      else
-        m.innerHTML = '<a href="https://maps.google.com/maps?q=46.8626878,-113.9848835&amp;ie=UTF8&amp;t=m&amp;z=16&amp;ll=46.8626878,-113.9848835">DevFestMT Location Map</a>'
-    }
-    mediaQuery.addListener(mediaQueryCallback);
-    mediaQueryCallback();
-
-  </script>
-<script type="text/javascript">(function(){var bz=document.createElement("script");bz.type="text/javascript";bz.async=true;bz.src="//www.bizzabo.com/widgets/community/community.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(bz,s);})();</script>
+  <!-- Twitter stuff -->
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-  <script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-
-
+  <!-- Google+ Stuff -->
+  <script type="text/javascript">(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/plusone.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script>
 </body>
 </html>

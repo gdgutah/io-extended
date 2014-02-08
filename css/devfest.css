@@ -40,6 +40,10 @@ section h1 {
   section h2 { font-size: 26px }
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -76,14 +80,15 @@ header ul li a {
   font-size: 18px;
   font-family: 'Open Sans',Arial;
   font-weight: 400;
-  color: #444;
+  color: #428BCA;
   text-transform: none;
   transition: color .35s ease-out;
   text-decoration: none;
 }
 header ul li a:hover {
-  color: #000;
+  color: #2A6496;
   transition: color .05s ease-out;
+  text-decoration: none;
 }
 header .aux {
   position: absolute;
@@ -99,7 +104,7 @@ header .social {
 }
 header .social .googleplus,
 header .social .twitter {
-  background-image: url("sprite-social.png");
+  background-image: url("../resources/sprite-social.png");
   height: 33px;
   width: 33px;
   display: block;
@@ -210,6 +215,10 @@ color: #999;
   padding-top: 8px;
 }
 
+.day-name {
+  font-size: 30px;
+}
+
 .speaker-box {
     padding: 15px 25px 5px;
     float: left;
@@ -218,6 +227,7 @@ color: #999;
     margin-bottom: 30px;
     margin-right: 30px;
     color: #505050;
+  width: 100%;
 background: rgb(247,247,247); 
 background: -moz-linear-gradient(top,  rgba(247,247,247,1) 0%, rgba(252,252,252,1) 6%, rgba(252,252,252,1) 54%, rgba(247,247,247,1) 100%); 
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,247,247,1)), color-stop(6%,rgba(252,252,252,1)), color-stop(54%,rgba(252,252,252,1)), color-stop(100%,rgba(247,247,247,1))); 
@@ -246,7 +256,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 }
 
 .speaker-avatar img {
-    border: 3px solid hsl(0, 0%, 76%);
+  border: 3px solid hsl(0, 0%, 76%);
+  max-width: 126px;
+  max-height: 126px;
 }
 
 .speaker-info {
@@ -279,29 +291,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 }
 
 
-#gdglogo { height: 110px; float:right;}
+#gdglogo { width: 350px;}
 
 
 @media (min-width:700px) { 
   #gdglogo {
-      display: block;
-      float: right;
-      height: 250px;
-      position: relative;
-      top: -19px;
+    width: 700px;
+    margin-top: 10px;
   }
 
 }
 
 #travelandlocation { padding-bottom: 105px }
-#travelandlocation ul {
+#travelandlocation .location {
   display: block;
   line-height: 115%;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-#travelandlocation ul h1 {
+.location h3 {
   font-size: 20px;
   font-family: 'Open Sans',Arial;
   font-weight: 400;
@@ -309,8 +318,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
   text-transform: none;
   padding-bottom: 10px;
   margin: 0;
+  border-bottom: 1px solid #CCC;
 }
-#travelandlocation ul li {
+.location .address div {
   color: #777;
   font-size: 13px;
   margin-bottom: 30px;
@@ -341,13 +351,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
   transition: color .05s ease-out;
 }
 @media (min-width:680px) and (max-width:850px) { 
-  #travelandlocation ul li {
+  #travelandlocation .location .address {
       display: block;
       float: left;
       width: 60%;
       padding-right: 3%;
   }
-  #travelandlocation ul li:first-child {
+  #travelandlocation .location .address:first-child {
       width: 30%;
       padding-right: 3%;
   }
@@ -360,11 +370,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
       float: right;
       width: 575px;
   }
-  #travelandlocation ul {
+  #travelandlocation .location {
       float: left;
       width: 242px;
   }
-  #travelandlocation ul li {
+  #travelandlocation .location .address {
       padding: 0 0 30px 0;
       margin: 0;
   }
@@ -397,7 +407,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
   display: inline-block;
   width: 42px;
   height: 42px;
-  background: url("sprite-social.png") no-repeat 0 bottom;
+  background: url("../resources/sprite-social.png") no-repeat 0 bottom;
 }
 #conversation .twitter {
   margin-left: 15px;

@@ -1,0 +1,30 @@
+<div class="container clear">
+  <h2>Location</h2>
+
+  <div id="mapcontainer" media-query-callback="mediaQueryCallback(matches)" query="(min-width: 750px)">
+    <a ng-hide="showMap" href="https://maps.google.com/maps?q=46.8626878,-113.9848835&amp;ie=UTF8&amp;t=m&amp;z=16&amp;ll=46.8626878,-113.9848835">Family DevFest Location Map</a>
+    <iframe ng-show="showMap" width="568" height="354" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=46.8626878,-113.9848835&amp;ie=UTF8&amp;t=m&amp;z=16&amp;ll=46.8626878,-113.9848835&amp;output=embed"></iframe>
+  </div>
+
+  <div class="location">
+    <h3>{{location.city}}, {{location.state}}</h3>
+    <div class="address">
+      {{location.name}}<br>
+      {{location.address}}
+    </div>
+  </div>
+
+  <div>
+    <h2>Hotels</h2>
+    <div class="location" ng-repeat="hotel in hotels">
+      <h3>{{hotel.name}}</h3>
+      <div class="address">
+        {{hotel.address.street}}<br />
+        {{hotel.address.city}}, {{hotel.address.state}} {{hotel.address.zip}}<br />
+        TEL: {{hotel.phoneNumber}}<br />
+        FAX: {{hotel.fax}}<br />
+        <a ng-href="{{hotel.bookLink}}">{{hotel.bookText}}</a>
+      </div>
+    </div>
+  </div>
+</div>
