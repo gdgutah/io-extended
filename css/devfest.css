@@ -40,6 +40,10 @@ section h1 {
   section h2 { font-size: 26px }
 }
 
+.hide {
+  display: none !important;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -273,6 +277,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
     font-size: 80%;
     margin: 0 0 0 10px;
 }
+
 .session-info {
     float: left;
     clear: left;
@@ -290,13 +295,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
     background-color: #fff;
 }
 
-
-#gdglogo { width: 350px;}
+.logo-container {
+  text-align: center;
+}
+#gdglogo { max-width: 90%;}
 
 
 @media (min-width:700px) { 
   #gdglogo {
-    width: 700px;
+    width: 650px;
     margin-top: 10px;
   }
 
@@ -320,10 +327,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
   margin: 0;
   border-bottom: 1px solid #CCC;
 }
-.location .address div {
+.location .address {
   color: #777;
   font-size: 13px;
   margin-bottom: 30px;
+  line-height: 18px;
 }
 #travelandlocation iframe {
   border: 4px solid #bbb;

@@ -124,7 +124,7 @@ angular.module('dff').constant('days', (function() {
   angular.forEach(days, function(day) {
     angular.forEach(day.activities, function(activity) {
       if (activity.isSession) {
-        activity.speaker.path = 'resources/activities/sessions/' + activity.speaker.name.replace(/ |\//g, '-').toLowerCase();
+        activity.speaker.path = 'activities/sessions/' + activity.speaker.name.replace(/ |\//g, '-').toLowerCase();
       }
     });
   });

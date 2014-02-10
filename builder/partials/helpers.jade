@@ -1,0 +1,20 @@
+.container
+  div.logo-container
+    img#gdglogo(src='resources/devfest-logo.png')
+  p.subtitle
+    | Orem, UT
+    br
+    span(itemprop='startDate', content= days[0].fullDate) #{days[0].monthName} #{days[0].day}
+    | -
+    span(itemprop='endDate', content= days[days.length - 1].fullDate) #{days[days.length - 1].day}
+    | , #{days[days.length - 1].year}.
+  .col-md-5
+    br
+    p
+      | A local effort by
+      ul
+        each helper in helpers
+          li
+            a(href= helper.url) #{helper.name}
+    //
+      <p>Join the community at <a href="http://events.bizzabo.com/DevFestMT">http://events.bizzabo.com/DevFestMT</a></p>

@@ -1,0 +1,19 @@
+.container
+  a(name='whyattend')
+  h2 Why Attend?
+  .pull-right.prizes
+    h3 Prizes!
+    ul
+      each prize in prizes
+        li #{prize}
+  p(itemprop='description')
+    | Connect with developers, designers, entrepreneurs, teachers and students.
+    | We're getting together to push tech forward in Utah and in education.
+  p
+    | We’ll host a full day of tech talks. Then join up later that evening around 8PM for a casual after party.
+    | On day 2 put your newfound knowledge to work building your first or next app. We'll have guided code labs and plenty of time for hacking.
+    | Learn how to code something cool!
+  h4 Admission Includes:
+  ul
+    each s in swag
+      li #{s}

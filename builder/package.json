@@ -1,0 +1,19 @@
+{
+  "name": "devfestfam.com",
+  "version": "0.0.1",
+  "private": true,
+  "description": "This is for building the devfestfam website with jade.",
+  "homepage": "https://github.com/gdgutah/devfestfam.com",
+  "authors": [
+    "Kent C. Dodds <kent@doddsfamily.us>"
+  ],
+  "scripts": {},
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jade": "~1.1.5",
+    "lodash-node": "~2.4.1"
+  }
+}
