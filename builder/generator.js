@@ -18,7 +18,12 @@ var options = {
       date: new Date('2014-05-17'),
       activities: [
         {
-          isSession: true,
+          name: 'Registration',
+          startTime: '7:30 AM',
+          endTime: '8:00 AM'
+        },
+        {
+          name: 'Cool Robotics!',
           speaker: {
             name: 'Robotics Speaker',
             url: 'http://plus.google.com/',
@@ -27,12 +32,11 @@ var options = {
               url: 'http://www.google.com'
             }
           },
-          name: 'Cool Robotics!',
           startTime: '8:00 AM',
           endTime: '8:50 AM'
         },
         {
-          isSession: true,
+          name: 'Google Glass',
           speaker: {
             name: 'Google Glass Speaker',
             url: 'http://plus.google.com/',
@@ -41,12 +45,11 @@ var options = {
               url: 'http://www.example.com'
             }
           },
-          name: 'Google Glass',
           startTime: '9:00 AM',
           endTime: '9:50 AM'
         },
         {
-          isSession: true,
+          name: 'Social Media Safety',
           speaker: {
             name: 'Social Media Safety Speaker',
             url: 'http://plus.google.com/',
@@ -55,12 +58,11 @@ var options = {
               url: 'http://www.example.com'
             }
           },
-          name: 'Social Media Safety',
           startTime: '10:00 AM',
           endTime: '10:50 AM'
         },
         {
-          isSession: true,
+          name: 'Coding',
           speaker: {
             name: 'Coding Speaker',
             url: 'http://plus.google.com/',
@@ -69,7 +71,6 @@ var options = {
               url: 'http://www.example.com'
             }
           },
-          name: 'Coding',
           startTime: '11:00 AM',
           endTime: '11:50 AM'
         }
@@ -80,7 +81,7 @@ var options = {
       date: new Date('2014-05-18'),
       activities: [
         {
-          isSession: true,
+          name: 'Write your first android app',
           speaker: {
             name: 'Write your first android app Speaker',
             url: 'http://plus.google.com/',
@@ -89,12 +90,11 @@ var options = {
               url: 'http://www.example.com'
             }
           },
-          name: 'Write your first android app',
           startTime: '8:00 AM',
           endTime: '8:50 AM'
         },
         {
-          isSession: true,
+          name: 'Women in tech/coding',
           speaker: {
             name: 'Women in tech/coding Speaker',
             url: 'http://plus.google.com/',
@@ -103,12 +103,11 @@ var options = {
               url: 'http://www.example.com'
             }
           },
-          name: 'Women in tech/coding',
           startTime: '9:00 AM',
           endTime: '9:50 AM'
         },
         {
-          isSession: true,
+          name: 'Coding Exhibit Hall',
           speaker: {
             name: 'Coding Exhibit Hall Speaker',
             url: 'http://plus.google.com/',
@@ -117,7 +116,6 @@ var options = {
               url: 'http://www.example.com'
             }
           },
-          name: 'Coding Exhibit Hall',
           startTime: '10:00 AM',
           endTime: '10:50 AM'
         }
@@ -173,7 +171,7 @@ _.each(options.days, function(day) {
   day.monthName = monthNames[d.getMonth()];
   day.simpleDate = day.monthName + ' ' + day.day + ', ' + day.year;
   _.each(day.activities, function(activity) {
-    if (activity.isSession) {
+    if (activity.speaker) {
       var simpleName = activity.speaker.name.replace(/ |\//g, '-').toLowerCase();
       var speakerDir = 'activities/sessions/' + simpleName;
       activity.speaker.company.template = fs.readFileSync(speakerDir + '/company.html', 'utf8');

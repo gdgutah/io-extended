@@ -15,7 +15,10 @@
                 td
                   | #{activity.startTime} - #{activity.endTime}
                 td
-                  a(href= '#activity-' + activity.name) #{activity.name}
+                  if activity.speaker
+                    a(href= '#activity-' + activity.name) #{activity.name}
+                  else
+                    span #{activity.name}
     p (Agenda is still subject to change)
   .clear
   h2 Sessions
@@ -23,8 +26,8 @@
   each day in days
     div
       each activity in day.activities
-        .speaker-box.bordered-shadowed
-          if activity.isSession
+        if activity.speaker
+          .speaker-box.bordered-shadowed
             div
               a(name= 'activity-' + activity.name)
               if !activity.speaker.noPhoto
