@@ -8,119 +8,145 @@ var options = {
   googlePlus: googlePlus,
   helpers: [
     {
-      name: 'Google Developer Group, Utah',
+      name: ' GDG Utah',
       url: googlePlus
     }
   ],
-  days: [
+  activities: [
     {
-      name: 'Day 1',
-      date: new Date('2014-05-17'),
-      activities: [
-        {
-          name: 'Registration',
-          startTime: '7:30 AM',
-          endTime: '8:00 AM'
-        },
-        {
-          name: 'Cool Robotics!',
-          speaker: {
-            name: 'Robotics Speaker',
-            url: 'http://plus.google.com/',
-            company: {
-              name: 'Robotics Company',
-              url: 'http://www.google.com'
-            }
-          },
-          startTime: '8:00 AM',
-          endTime: '8:50 AM'
-        },
-        {
-          name: 'Google Glass',
-          speaker: {
-            name: 'Google Glass Speaker',
-            url: 'http://plus.google.com/',
-            company: {
-              name: 'Example Company',
-              url: 'http://www.example.com'
-            }
-          },
-          startTime: '9:00 AM',
-          endTime: '9:50 AM'
-        },
-        {
-          name: 'Social Media Safety',
-          speaker: {
-            name: 'Social Media Safety Speaker',
-            url: 'http://plus.google.com/',
-            company: {
-              name: 'Example Company',
-              url: 'http://www.example.com'
-            }
-          },
-          startTime: '10:00 AM',
-          endTime: '10:50 AM'
-        },
-        {
-          name: 'Coding',
-          speaker: {
-            name: 'Coding Speaker',
-            url: 'http://plus.google.com/',
-            company: {
-              name: 'Example Company',
-              url: 'http://www.example.com'
-            }
-          },
-          startTime: '11:00 AM',
-          endTime: '11:50 AM'
-        }
-      ]
+      name: 'Registration',
+      startTime: '7:30 AM',
+      endTime: '8:00 AM'
     },
     {
-      name: 'Day 2',
-      date: new Date('2014-05-18'),
-      activities: [
-        {
+      name: 'Cool Robotics!',
+      speaker: {
+        name: 'Robotics Speaker',
+        url: 'http://plus.google.com/',
+        company: {
+          name: 'Robotics Company',
+          url: 'http://www.google.com'
+        }
+      },
+      startTime: '8:00 AM',
+      endTime: '8:50 AM'
+    },
+    {
+      name: 'Google Glass',
+      speaker: {
+        name: 'Google Glass Speaker',
+        url: 'http://plus.google.com/',
+        company: {
+          name: 'Example Company',
+          url: 'http://www.example.com'
+        }
+      },
+      startTime: '9:00 AM',
+      endTime: '9:50 AM'
+    },
+    {
+      name: 'Social Media Safety',
+      speaker: {
+        name: 'Social Media Safety Speaker',
+        url: 'http://plus.google.com/',
+        company: {
+          name: 'Example Company',
+          url: 'http://www.example.com'
+        }
+      },
+      startTime: '10:00 AM',
+      endTime: '10:50 AM'
+    },
+    {
+      name: 'Coding',
+      speaker: {
+        name: 'Coding Speaker',
+        url: 'http://plus.google.com/',
+        company: {
+          name: 'Example Company',
+          url: 'http://www.example.com'
+        }
+      },
+      startTime: '11:00 AM',
+      endTime: '11:50 AM'
+    },{
           name: 'Write your first android app',
           speaker: {
-            name: 'Write your first android app Speaker',
-            url: 'http://plus.google.com/',
-            company: {
-              name: 'Example Company',
-              url: 'http://www.example.com'
-            }
+              name: 'Write your first android app Speaker',
+              url: 'http://plus.google.com/',
+              company: {
+                  name: 'Example Company',
+                  url: 'http://www.example.com'
+              }
           },
           startTime: '8:00 AM',
           endTime: '8:50 AM'
-        },
-        {
+      },
+      {
           name: 'Women in tech/coding',
           speaker: {
-            name: 'Women in tech/coding Speaker',
-            url: 'http://plus.google.com/',
-            company: {
-              name: 'Example Company',
-              url: 'http://www.example.com'
-            }
+              name: 'Women in tech/coding Speaker',
+              url: 'http://plus.google.com/',
+              company: {
+                  name: 'Example Company',
+                  url: 'http://www.example.com'
+              }
           },
           startTime: '9:00 AM',
           endTime: '9:50 AM'
-        },
-        {
+      },
+      {
           name: 'Coding Exhibit Hall',
           speaker: {
-            name: 'Coding Exhibit Hall Speaker',
-            url: 'http://plus.google.com/',
-            company: {
-              name: 'Example Company',
-              url: 'http://www.example.com'
-            }
+              name: 'Coding Exhibit Hall Speaker',
+              url: 'http://plus.google.com/',
+              company: {
+                  name: 'Example Company',
+                  url: 'http://www.example.com'
+              }
           },
           startTime: '10:00 AM',
           endTime: '10:50 AM'
-        }
-      ]
-    }
+      },
+      {
+          name: 'Write your first android app',
+          speaker: {
+              name: 'Write your first android app Speaker',
+              url: 'http://plus.google.com/',
+              company: {
+                  name: 'Example Company',
+                  url: 'http://www.example.com'
+              }
+          },
+          startTime: '8:00 AM',
+          endTime: '8:50 AM'
+      },
+      {
+          name: 'Women in tech/coding',
+          speaker: {
+              name: 'Women in tech/coding Speaker',
+              url: 'http://plus.google.com/',
+              company: {
+                  name: 'Example Company',
+                  url: 'http://www.example.com'
+              }
+          },
+          startTime: '9:00 AM',
+          endTime: '9:50 AM'
+      },
+      {
+          name: 'Coding Exhibit Hall',
+          speaker: {
+              name: 'Coding Exhibit Hall Speaker',
+              url: 'http://plus.google.com/',
+              company: {
+                  name: 'Example Company',
+                  url: 'http://www.example.com'
+              }
+          },
+          startTime: '10:00 AM',
+          endTime: '10:50 AM'
+      }
   ],
   prizes: [
     'awesome thing 1',

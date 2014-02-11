@@ -78,7 +78,6 @@ header ul {
 }
 header ul li {
   display: inline;
-  margin-right: 40px;
 }
 header ul li a {
   font-size: 18px;
@@ -99,6 +98,7 @@ header .aux {
   right: 0;
   top: 0;
   width: 100%;
+  border-left: 1px solid #bbb;
 }
 header .social {
   float: left;
@@ -141,11 +141,58 @@ header .register a {
   color: #888;
   text-transform: uppercase;
 }
-@media (min-width:835px) { 
+header .sponsor {
+    text-align: center;
+    line-height: 41px;
+}
+header .sponsor a,
+header .present a{
+    height: 41px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Open Sans',Arial;
+    font-weight: 800;
+    color: #888;
+    text-transform: uppercase;
+}
+header .present {
+    text-align: center;
+    line-height: 41px;
+}
+@media (max-width:894px) {
+    header .sponsor a,
+    header .present a {
+        width: 175px;
+        height: 100%;
+        text-decoration: none;
+        font-family: 'Open Sans',Arial;
+        font-weight: 800;
+        color: #444;
+        text-transform: uppercase;
+    }
+    header ul {
+        display: block;
+        width: 100%;
+    }
+    header ul li {
+        display: none;
+    }
+    header ul li.present {
+        display: block;
+        float: left;
+    }
+    header ul li.sponsor {
+        display: block;
+        float: right;
+    }
+}
+@media (min-width:895px) {
   header,
   header .aux,
   header .social,
-  header .register { height: 88px }
+  header .register,
+  header .sponsor,
+  header .present { height: 88px }
   header .aux {
       display: block;
       width: 300px;
@@ -155,20 +202,22 @@ header .register a {
       display: block;
       float: left;
   }
-  header ul li { line-height: 88px }
-  header .register {
-      border-left: 1px solid #fff;
-      float: left;
+  header ul li {
+      line-height: 88px;
+      margin-right: 40px;
+  }
+  header .register,
+  header .sponsor,
+  header .present {
       text-align: center;
       line-height: 100%;
-      display: block;
   }
-  header .register a {
-      display: block;
-      width: 195px;
+  header .register a,
+  header .sponsor a,
+  header .present a {
+      width: 175px;
       height: 100%;
       text-decoration: none;
-      font-size: 18px;
       font-family: 'Open Sans',Arial;
       font-weight: 800;
       color: #444;
