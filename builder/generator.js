@@ -12,6 +12,13 @@ var options = {
       url: googlePlus
     }
   ],
+  date: {
+    full: 'May 3, 2014',
+    day: '3',
+    month: 'May',
+    monthNum: '5',
+    year: '2014'
+  },
   activities: [
     {
       name: 'Registration',
@@ -69,84 +76,85 @@ var options = {
       },
       startTime: '11:00 AM',
       endTime: '11:50 AM'
-    },{
-          name: 'Write your first android app',
-          speaker: {
-              name: 'Write your first android app Speaker',
-              url: 'http://plus.google.com/',
-              company: {
-                  name: 'Example Company',
-                  url: 'http://www.example.com'
-              }
-          },
-          startTime: '8:00 AM',
-          endTime: '8:50 AM'
+    },
+    {
+      name: 'Write your first android app',
+      speaker: {
+        name: 'Write your first android app Speaker',
+        url: 'http://plus.google.com/',
+        company: {
+          name: 'Example Company',
+          url: 'http://www.example.com'
+        }
       },
-      {
-          name: 'Women in tech/coding',
-          speaker: {
-              name: 'Women in tech/coding Speaker',
-              url: 'http://plus.google.com/',
-              company: {
-                  name: 'Example Company',
-                  url: 'http://www.example.com'
-              }
-          },
-          startTime: '9:00 AM',
-          endTime: '9:50 AM'
+      startTime: '8:00 AM',
+      endTime: '8:50 AM'
+    },
+    {
+      name: 'Women in tech/coding',
+      speaker: {
+        name: 'Women in tech/coding Speaker',
+        url: 'http://plus.google.com/',
+        company: {
+          name: 'Example Company',
+          url: 'http://www.example.com'
+        }
       },
-      {
-          name: 'Coding Exhibit Hall',
-          speaker: {
-              name: 'Coding Exhibit Hall Speaker',
-              url: 'http://plus.google.com/',
-              company: {
-                  name: 'Example Company',
-                  url: 'http://www.example.com'
-              }
-          },
-          startTime: '10:00 AM',
-          endTime: '10:50 AM'
+      startTime: '9:00 AM',
+      endTime: '9:50 AM'
+    },
+    {
+      name: 'Coding Exhibit Hall',
+      speaker: {
+        name: 'Coding Exhibit Hall Speaker',
+        url: 'http://plus.google.com/',
+        company: {
+          name: 'Example Company',
+          url: 'http://www.example.com'
+        }
       },
-      {
-          name: 'Write your first android app',
-          speaker: {
-              name: 'Write your first android app Speaker',
-              url: 'http://plus.google.com/',
-              company: {
-                  name: 'Example Company',
-                  url: 'http://www.example.com'
-              }
-          },
-          startTime: '8:00 AM',
-          endTime: '8:50 AM'
+      startTime: '10:00 AM',
+      endTime: '10:50 AM'
+    },
+    {
+      name: 'Write your first android app',
+      speaker: {
+        name: 'Write your first android app Speaker',
+        url: 'http://plus.google.com/',
+        company: {
+          name: 'Example Company',
+          url: 'http://www.example.com'
+        }
       },
-      {
-          name: 'Women in tech/coding',
-          speaker: {
-              name: 'Women in tech/coding Speaker',
-              url: 'http://plus.google.com/',
-              company: {
-                  name: 'Example Company',
-                  url: 'http://www.example.com'
-              }
-          },
-          startTime: '9:00 AM',
-          endTime: '9:50 AM'
+      startTime: '8:00 AM',
+      endTime: '8:50 AM'
+    },
+    {
+      name: 'Women in tech/coding',
+      speaker: {
+        name: 'Women in tech/coding Speaker',
+        url: 'http://plus.google.com/',
+        company: {
+          name: 'Example Company',
+          url: 'http://www.example.com'
+        }
       },
-      {
-          name: 'Coding Exhibit Hall',
-          speaker: {
-              name: 'Coding Exhibit Hall Speaker',
-              url: 'http://plus.google.com/',
-              company: {
-                  name: 'Example Company',
-                  url: 'http://www.example.com'
-              }
-          },
-          startTime: '10:00 AM',
-          endTime: '10:50 AM'
-      }
+      startTime: '9:00 AM',
+      endTime: '9:50 AM'
+    },
+    {
+      name: 'Coding Exhibit Hall',
+      speaker: {
+        name: 'Coding Exhibit Hall Speaker',
+        url: 'http://plus.google.com/',
+        company: {
+          name: 'Example Company',
+          url: 'http://www.example.com'
+        }
+      },
+      startTime: '10:00 AM',
+      endTime: '10:50 AM'
+    }
   ],
   prizes: [
     'awesome thing 1',
@@ -187,30 +195,21 @@ var options = {
   eventBrightId: '8243355097'
 };
 
-var monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-_.each(options.days, function(day) {
-  var d = day.date;
-  day.day = d.getDate();
-  day.month = d.getMonth() + 1; //Months are zero based
-  day.year = d.getFullYear();
-  day.fullDate = day.year + '-' + day.month + '-' + day.day;
-  day.monthName = monthNames[d.getMonth()];
-  day.simpleDate = day.monthName + ' ' + day.day + ', ' + day.year;
-  _.each(day.activities, function(activity) {
-    if (activity.speaker) {
-      var simpleName = activity.speaker.name.replace(/ |\//g, '-').toLowerCase();
-      var speakerDir = 'activities/sessions/' + simpleName;
-      activity.speaker.company.template = fs.readFileSync(speakerDir + '/company.html', 'utf8');
-      activity.speaker.sessionTemplate = fs.readFileSync(speakerDir + '/session.html', 'utf8');
-      activity.speaker.photo = 'resources/speaker-photos/' + simpleName + '.jpg';
-    }
-  });
+_.each(options.activities, function (activity) {
+  if (activity.speaker) {
+    var simpleName = activity.speaker.name.replace(/ |\//g, '-').toLowerCase();
+    var speakerDir = 'activities/sessions/' + simpleName;
+    activity.speaker.company.template = fs.readFileSync(speakerDir + '/company.html', 'utf8');
+    activity.speaker.sessionTemplate = fs.readFileSync(speakerDir + '/session.html', 'utf8');
+    activity.speaker.photo = 'resources/speaker-photos/' + simpleName + '.jpg';
+    console.log(activity.speaker.photo);
+  }
 });
 
 var html = jade.renderFile('index.jade', options);
 
-fs.writeFile('../index.html', html, function(err) {
-  if(err) {
+fs.writeFile('../index.html', html, function (err) {
+  if (err) {
     console.log(err);
   } else {
     console.log('The file was saved!');
