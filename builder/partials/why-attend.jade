@@ -1,19 +1,23 @@
 .container
   a(name='whyattend')
   h2 Why Attend?
-  .pull-right.prizes
-    h3 Prizes!
-    ul
-      each prize in prizes
-        li #{prize}
+  //.pull-right.prizes
+  //  h3 Free Stuff!
+  //  ul
+  //    each prize in prizes
+  //      li #{prize}
   p(itemprop='description')
-    | Connect with developers, designers, entrepreneurs, teachers and students.
-    | We're getting together to push tech forward in Utah and in education.
+    | DevFestFamily is not a typical tech conference, as it's focus is on the entire family. With so many jobs being
+    | replaced by software, the importance of teaching Utah's children the skills of coding has never been higher.
+    | DevFestFamily aims to bring code to those who have never coded, and help train those who are already familiar with
+    | coding principles. With this we hope to prepare Utahn's to cope with a job market that is dramatically shifting
+    | towards development jobs.
   p
-    | We’ll host a full day of tech talks. Then join up later that evening around 8PM for a casual after party.
-    | On day 2 put your newfound knowledge to work building your first or next app. We'll have guided code labs and plenty of time for hacking.
-    | Learn how to code something cool!
+    | For a better understanding of why we think you should attend, please watch
+    | <a href="https://www.youtube.com/watch?v=nKIu9yen5nc" target="_blank">THIS VIDEO</a> from <a href="http://www.code.org" target="_blank">code.org</a>.
   h4 Admission Includes:
   ul
     each s in swag
       li #{s}
+  p
+    <div><a class="buy button" href="https://ti.to/aaronfrost/devfestfamily" target="_blank">Buy A Ticket</a></div>

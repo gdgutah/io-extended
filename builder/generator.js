@@ -161,8 +161,9 @@ var options = {
     'really cool thing 2'
   ],
   swag: [
-    'rad thing 1',
-    'sweet thing 2'
+    'Free lunch',
+    'Free Conference T-shirt',
+    'As many Raspberry Pi as we can afford to give away'
   ],
   sponsors: [
     {
@@ -188,9 +189,9 @@ var options = {
   location: {
     state: 'Utah',
     city: 'Orem',
-    name: 'Location Name',
-    address: 'Location Address...',
-    mapUrl: 'https://maps.google.com/maps?q=46.8626878,-113.9848835&ie=UTF8&t=m&z=16&ll=46.8626878,-113.9848835'
+    name: 'UVU, Woodbury School of Business',
+    address: '800 W University Pkwy, Orem, UT 84058',
+    mapUrl: 'https://maps.google.com/maps?q=40.2769021,-111.7125277&ie=UTF8&t=m&z=17&ll=40.2769021,-111.7125277'
   },
   eventBrightId: '8243355097'
 };
