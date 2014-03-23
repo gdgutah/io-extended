@@ -3,9 +3,11 @@ var fs = require('fs');
 var _ = require('lodash-node');
 
 var googlePlus = 'https://plus.google.com/111917982940065392922';
+var facebook = 'https://www.facebook.com/gdgutdev';
 
 var options = {
   googlePlus: googlePlus,
+  facebook: facebook,
   helpers: [
     {
       name: ' GDG Utah',

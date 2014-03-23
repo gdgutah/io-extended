@@ -477,15 +477,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
   margin: 0;
 }
 #conversation .googleplus,
-#conversation .twitter {
+#conversation .twitter,
+#conversation .facebook {
   line-height: 42px;
   display: inline-block;
   width: 42px;
   height: 42px;
+  margin-left:15px;
+}
+#conversation .facebook {
+  background: url("../resources/facebook.png") no-repeat 0 bottom;
+}
+#conversation .googleplus,
+#conversation .twitter {
   background: url("../resources/sprite-social.png") no-repeat 0 bottom;
 }
 #conversation .twitter {
-  margin-left: 15px;
   background-position: -47px bottom;
 }
 @media (min-width:650px) { 
@@ -494,7 +501,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
       float: left;
   }
   #conversation .googleplus,
-  #conversation .twitter {
+  #conversation .twitter,
+  #conversation .facebook {
       display: block;
       float: left;
   }
@@ -503,10 +511,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
       padding-bottom: 125px;
   }
   #conversation .container {
-      width: 348px;
+      width: 372px;
       text-align: center;
   }
-  #conversation .googleplus { margin-left: 30px }
+  #conversation .googleplus,
+  #conversation .facebook { margin-left: 30px }
 }
 
 #subtochange{
