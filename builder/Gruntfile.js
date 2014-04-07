@@ -24,4 +24,5 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-exec');
 
   grunt.registerTask('dev',['watch:scripts']);
-}
+  grunt.registerTask('default', 'exec');
+};
