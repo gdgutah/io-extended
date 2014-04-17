@@ -220,7 +220,8 @@ var options = {
     {
       name: 'DojoDevCamp',
       url: 'http://dojodevcamp.com/',
-      level: 'platinum'
+      level: 'platinum',
+      image: 'resources/sponsor-logos/dojologo.png'
     },
     {
       name: 'DevMountain',
