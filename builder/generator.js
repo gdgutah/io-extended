@@ -167,8 +167,44 @@ var options = {
   ],
   sponsors: [
     {
-      name: 'Google',
-      url: 'http://www.google.com'
+      name: 'BlueHost',
+      url: 'http://www.bluehost.com',
+      image: 'resources/sponsor-logos/bluehostlogo.png',
+      level: 'premier'
+    },
+    {
+      name: 'Google Fiber',
+      url: 'https://fiber.google.com/about/',
+      level: 'platinum',
+      image: 'resources/sponsor-logos/fiberlogo.png'
+    },
+    {
+      name: 'AtTask',
+      url: 'http://www.attask.com',
+      image: 'resources/sponsor-logos/attasklogo.png',
+      level: 'platinum'
+    },
+    {
+      name: 'DojoDevCamp',
+      url: 'http://dojodevcamp.com/',
+      level: 'platinum'
+    },
+    {
+      name: 'DevMountain',
+      url: 'http://devmounta.in/',
+      level: 'gold',
+      image: 'resources/sponsor-logos/devmtnlogo.png'
+    },
+    {
+      name: 'Plural Sight',
+      url: 'http://www.pluralsight.com/',
+      level: 'gold',
+      image: 'resources/sponsor-logos/pluralsightlogo.png'
+    },
+    {
+      name: 'Provo Web Academy',
+      url: 'http://provowebacademy.com/',
+      level: 'silver'
     }
   ],
   hotels: [
