@@ -11,19 +11,14 @@ head
   link(href='css/devfest.css', rel='stylesheet', type='text/css')
   link(href='vendor/bootstrap.min.css', rel='stylesheet', type='text/css')
   link(href="resources/favicon.ico", rel="icon", type="image/x-icon")
-  link(href="resources/favicon.ico", rel="shortcut icon", type="image/x-icon")
-  //
-     <meta itemprop="image" content="devsummit/images/chrome-dev-summit-masthead.png"> 
-  //
-     TODO Replace with an appropriate image 
-  title Family DevFest 2014
+  title DevFest Family 2014
   script.
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    //  ga('create', 'UA-98864-4', 'devfestmt.com');
-    //  ga('send', 'pageview');
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-49769569-1', 'devfestfam.com');
+    ga('send', 'pageview');
   body(ng-controller='MainCtrl')
     header 
       include partials/header
@@ -54,13 +49,9 @@ head
           link.className = '';
           map.className = 'hide';
         }
-      }
+      };
       mediaQuery.addListener(mediaQueryCallback);
       mediaQueryCallback();
-    //
-       Bizzabo stuff 
-    script.
-      (function(){var bz=document.createElement("script");bz.type="text/javascript";bz.async=true;bz.src="//www.bizzabo.com/widgets/community/community.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(bz,s);})();
     //
        Twitter stuff 
     script.

@@ -3,9 +3,11 @@ var fs = require('fs');
 var _ = require('lodash-node');
 
 var googlePlus = 'https://plus.google.com/111917982940065392922';
+var facebook = 'https://www.facebook.com/gdgutdev';
 
 var options = {
   googlePlus: googlePlus,
+  facebook: facebook,
   helpers: [
     {
       name: ' GDG Utah',
@@ -22,138 +24,169 @@ var options = {
   activities: [
     {
       name: 'Registration',
-      startTime: '7:30 AM',
-      endTime: '8:00 AM'
+      startTime: '9:30 AM',
+      endTime: '10:00 AM'
     },
     {
-      name: 'Cool Robotics!',
+      name: 'Keynote',
       speaker: {
-        name: 'Robotics Speaker',
-        url: 'http://plus.google.com/',
+        name: 'Aaron Frost',
+        url: 'https//plus.google.com/+AaronFrost/about',
         company: {
-          name: 'Robotics Company',
-          url: 'http://www.google.com'
+          name: 'GDG Utah',
+          url: 'http://gdgut.com'
         }
       },
-      startTime: '8:00 AM',
-      endTime: '8:50 AM'
+      startTime: '10:00 AM',
+      endTime: '10:45 AM'
+    },
+    {
+      name: 'For True Beginners',
+      speaker: {
+        name: 'TBD',
+        url: '#',
+        company: {
+          name: '',
+          url: '#'
+        }
+      },
+      startTime: '11:00 AM',
+      endTime: '11:45 AM'
+    },
+    {
+      name: 'Hello Computer: computer basics',
+      speaker: {
+        name: 'TBD',
+        url: '#',
+        company: {
+          name: '',
+          url: '#'
+        }
+      },
+      startTime: '11:00 AM',
+      endTime: '11:45 AM'
+    },
+    {
+      name: 'How to teach your kids to code',
+      speaker: {
+        name: 'TBD',
+        url: '#',
+        company: {
+          name: '',
+          url: '#'
+        }
+      },
+      startTime: '11:00 AM',
+      endTime: '11:45 AM'
+    },
+    {
+      name: 'Angry Birds Hour of Code',
+      speaker: {
+        name: 'TBD',
+        url: '#',
+        company: {
+          name: '',
+          url: '#'
+        }
+      },
+      startTime: '12:00 AM',
+      endTime: '12:45 AM'
+    },
+    {
+      name: 'Getting Kids Involved in Coding',
+      speaker: {
+        name: 'TBD',
+        url: '#',
+        company: {
+          name: '',
+          url: '#'
+        }
+      },
+      startTime: '12:00 AM',
+      endTime: '12:45 AM'
+    },
+    {
+      name: 'Lunch',
+      startTime: '1:00 PM',
+      endTime: '1:45 PM'
+    },
+    {
+      name: 'Robotics with FIRST Lego League',
+      speaker: {
+        name: 'TBD',
+        url: '#',
+        company: {
+          name: '',
+          url: '#'
+        }
+      },
+      startTime: '2:00 PM',
+      endTime: '2:45 PM'
+    },
+    {
+      name: 'Learning Web Development',
+      speaker: {
+        name: 'John Woodruff',
+        url: 'https://plus.google.com/+JohnWoodruff/about',
+        company: {
+          name: 'Provo Web Academy',
+          url: 'http://provowebacademy.com'
+        }
+      },
+      startTime: '2:00 PM',
+      endTime: '2:45 PM'
     },
     {
       name: 'Google Glass',
       speaker: {
-        name: 'Google Glass Speaker',
-        url: 'http://plus.google.com/',
+        name: 'TBD',
+        url: '#',
         company: {
-          name: 'Example Company',
-          url: 'http://www.example.com'
+          name: '',
+          url: '#'
         }
       },
-      startTime: '9:00 AM',
-      endTime: '9:50 AM'
+      startTime: '2:00 PM',
+      endTime: '2:45 PM'
     },
     {
-      name: 'Social Media Safety',
+      name: 'Family Internet Safety',
       speaker: {
-        name: 'Social Media Safety Speaker',
-        url: 'http://plus.google.com/',
+        name: 'TBD',
+        url: '#',
         company: {
-          name: 'Example Company',
-          url: 'http://www.example.com'
+          name: '',
+          url: '#'
         }
       },
-      startTime: '10:00 AM',
-      endTime: '10:50 AM'
+      startTime: '2:00 PM',
+      endTime: '2:45 PM'
     },
     {
-      name: 'Coding',
+      name: 'Raspberry Pi Coder',
       speaker: {
-        name: 'Coding Speaker',
-        url: 'http://plus.google.com/',
+        name: 'TBD',
+        url: '#',
         company: {
-          name: 'Example Company',
-          url: 'http://www.example.com'
+          name: '',
+          url: '#'
         }
       },
-      startTime: '11:00 AM',
-      endTime: '11:50 AM'
+      startTime: '3:00 PM',
+      endTime: '3:45 PM'
     },
     {
-      name: 'Write your first android app',
+      name: 'Discussion Panel: Mothers in Tech',
       speaker: {
-        name: 'Write your first android app Speaker',
-        url: 'http://plus.google.com/',
+        name: 'TBD',
+        url: '#',
         company: {
-          name: 'Example Company',
-          url: 'http://www.example.com'
+          name: '',
+          url: '#'
         }
       },
-      startTime: '8:00 AM',
-      endTime: '8:50 AM'
-    },
-    {
-      name: 'Women in tech/coding',
-      speaker: {
-        name: 'Women in tech/coding Speaker',
-        url: 'http://plus.google.com/',
-        company: {
-          name: 'Example Company',
-          url: 'http://www.example.com'
-        }
-      },
-      startTime: '9:00 AM',
-      endTime: '9:50 AM'
-    },
-    {
-      name: 'Coding Exhibit Hall',
-      speaker: {
-        name: 'Coding Exhibit Hall Speaker',
-        url: 'http://plus.google.com/',
-        company: {
-          name: 'Example Company',
-          url: 'http://www.example.com'
-        }
-      },
-      startTime: '10:00 AM',
-      endTime: '10:50 AM'
-    },
-    {
-      name: 'Write your first android app',
-      speaker: {
-        name: 'Write your first android app Speaker',
-        url: 'http://plus.google.com/',
-        company: {
-          name: 'Example Company',
-          url: 'http://www.example.com'
-        }
-      },
-      startTime: '8:00 AM',
-      endTime: '8:50 AM'
-    },
-    {
-      name: 'Women in tech/coding',
-      speaker: {
-        name: 'Women in tech/coding Speaker',
-        url: 'http://plus.google.com/',
-        company: {
-          name: 'Example Company',
-          url: 'http://www.example.com'
-        }
-      },
-      startTime: '9:00 AM',
-      endTime: '9:50 AM'
-    },
-    {
-      name: 'Coding Exhibit Hall',
-      speaker: {
-        name: 'Coding Exhibit Hall Speaker',
-        url: 'http://plus.google.com/',
-        company: {
-          name: 'Example Company',
-          url: 'http://www.example.com'
-        }
-      },
-      startTime: '10:00 AM',
-      endTime: '10:50 AM'
+      startTime: '3:00 PM',
+      endTime: '3:45 PM'
     }
   ],
   prizes: [
@@ -234,8 +267,9 @@ var options = {
 
 _.each(options.activities, function (activity) {
   if (activity.speaker) {
+    var simpleSessionName = activity.name.replace(/ |\//g, '-').toLowerCase();
     var simpleName = activity.speaker.name.replace(/ |\//g, '-').toLowerCase();
-    var speakerDir = 'activities/sessions/' + simpleName;
+    var speakerDir = 'activities/sessions/' + simpleSessionName;
     activity.speaker.company.template = fs.readFileSync(speakerDir + '/company.html', 'utf8');
     activity.speaker.sessionTemplate = fs.readFileSync(speakerDir + '/session.html', 'utf8');
     activity.speaker.photo = 'resources/speaker-photos/' + simpleName + '.jpg';
@@ -251,4 +285,4 @@ fs.writeFile('../index.html', html, function (err) {
   } else {
     console.log('The file was saved!');
   }
-}); 
+});

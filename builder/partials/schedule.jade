@@ -6,40 +6,36 @@
     table.table.table-bordered.table-striped
       tbody
         tr
-          th
-            |The schedule is still being finalized.
-            |To see all proposed talks, or to propose a topic of your own,
-            |please head over to <a href="http://www.utahgeekevents.com/Event/DevFestFamily2014/Sessions" target="_blank">UtahGeekEvents.com</a>
-            |to see the proposed sessions.
-          //th Activity
-        //each activity in activities
-        //  tr
-        //    td
-        //      | #{activity.startTime} - #{activity.endTime}
-        //    td
-        //      if activity.speaker
-        //        a(href= '#activity-' + activity.name) #{activity.name}
-        //      else
-        //        span #{activity.name}
-    p#subtochange (Agenda is still subject to change)
+          th Time
+          th Activity
+        each activity in activities
+          tr
+            td
+              | #{activity.startTime} - #{activity.endTime}
+            td
+              if activity.speaker
+                a(href= '#activity-' + activity.name) #{activity.name}
+              else
+                span #{activity.name}
+    p#subtochange (Agenda is still subject to change, please head over to <a href="http://www.utahgeekevents.com/Event/DevFestFamily2014/Sessions" target="_blank">UtahGeekEvents.com</a> to see more proposed sessions)
   .clear
-  //h2 Sessions
-  //a(name='sessions')
-  //each activity in activities
-  //  if activity.speaker
-  //    .speaker-box.bordered-shadowed
-  //      div
-  //        a(name= 'activity-' + activity.name)
-  //        if !activity.speaker.noPhoto
-  //          .speaker-avatar
-  //            a(href= activity.speaker.url, target='_new')
-  //              img.img-circle(src= activity.speaker.photo, alt= activity.speaker.name)
-  //        .speaker-name
-  //          a(href= activity.speaker.url, target='_new') #{activity.speaker.name}
-  //        .speaker-company.text-muted
-  //          a(href= activity.speaker.company.url) #{activity.speaker.company.name}
-  //        .speaker-company !{activity.speaker.company.template}
-  //        .session-info
-  //          h5 #{activity.name}
-  //          p !{activity.speaker.sessionTemplate}
-  //.clear
+  h2 Sessions
+  a(name='sessions')
+  each activity in activities
+    if activity.speaker
+      .speaker-box.bordered-shadowed
+        div
+          a(name= 'activity-' + activity.name)
+          if !activity.speaker.noPhoto
+            .speaker-avatar
+              a(href= activity.speaker.url, target='_new')
+                img.img-circle(src= activity.speaker.photo, alt= activity.speaker.name)
+          .speaker-name
+            a(href= activity.speaker.url, target='_new') #{activity.speaker.name}
+          .speaker-company.text-muted
+            a(href= activity.speaker.company.url) #{activity.speaker.company.name}
+          .speaker-company !{activity.speaker.company.template}
+          .session-info
+            h5 #{activity.name}
+            p !{activity.speaker.sessionTemplate}
+  .clear
