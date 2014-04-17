@@ -237,7 +237,8 @@ var options = {
     {
       name: 'Provo Web Academy',
       url: 'http://provowebacademy.com/',
-      level: 'silver'
+      level: 'silver',
+      image: 'resources/sponsor-logos/pwalogo.png'
     }
   ],
   hotels: [
