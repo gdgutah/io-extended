@@ -43,7 +43,7 @@ var options = {
     {
       name: 'So You Think You Want to Write Code?',
       speaker: {
-        name: 'TBD',
+        name: 'William Munn',
         url: '#',
         company: {
           name: '',
@@ -113,7 +113,7 @@ var options = {
     {
       name: 'Javascript as Your First Language',
       speaker: {
-        name: 'TBD',
+        name: 'William Munn',
         url: '#',
         company: {
           name: '',
@@ -244,7 +244,7 @@ var options = {
     {
       name: 'Websites for Smarties',
       speaker: {
-        name: 'TBD',
+        name: 'William Munn',
         url: '#',
         company: {
           name: '',
