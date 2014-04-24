@@ -2,21 +2,22 @@
   h2 Agenda
   .speaker-box.bordered-shadowed
     a(name='agenda')
-    h3 #{date.full}
-    table.table.table-bordered.table-striped
-      tbody
-        tr
-          th Time
-          th Activity
-        each activity in activities
+    each track in tracks
+      h3 #{track.name}
+      table.table.table-bordered.table-striped
+        tbody
           tr
-            td
-              | #{activity.startTime} - #{activity.endTime}
-            td
-              if activity.speaker
-                a(href= '#activity-' + activity.name) #{activity.name}
-              else
-                span #{activity.name}
+            th Time
+            th Activity
+          each activity in track.track
+            tr
+              td
+                | #{activity.startTime} - #{activity.endTime}
+              td
+                if activity.speaker
+                  a(href= '#activity-' + activity.name) #{activity.name}
+                else
+                  span #{activity.name}
     p#subtochange (Agenda is still subject to change, please head over to <a href="http://www.utahgeekevents.com/Event/DevFestFamily2014/Sessions" target="_blank">UtahGeekEvents.com</a> to see more proposed sessions)
   .clear
   h2 Sessions
