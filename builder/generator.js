@@ -31,7 +31,7 @@ var options = {
       name: 'Keynote',
       speaker: {
         name: 'Aaron Frost',
-        url: 'https//plus.google.com/+AaronFrost/about',
+        url: 'https://plus.google.com/+AaronFrost/about',
         company: {
           name: 'GDG Utah',
           url: 'http://gdgut.com'
