@@ -5,7 +5,8 @@
   "description": "This is for building the devfestfam website with jade.",
   "homepage": "https://github.com/gdgutah/devfestfam.com",
   "authors": [
-    "Kent C. Dodds <kent@doddsfamily.us>"
+    "Kent C. Dodds <kent@doddsfamily.us>",
+    "Aaron Frost <aaronfrost@gmail.com>"
   ],
   "scripts": {},
   "engines": {

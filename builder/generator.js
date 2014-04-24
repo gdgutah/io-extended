@@ -347,10 +347,22 @@ var options = {
       image: 'resources/sponsor-logos/dojologo.png'
     },
     {
+      name: 'Domo',
+      url: 'http://www.domo.com/',
+      level: 'platinum',
+      image: 'resources/sponsor-logos/domologo.png'
+    },
+    {
       name: 'DevMountain',
       url: 'http://devmounta.in/',
       level: 'gold',
-      image: 'resources/sponsor-logos/devmtnlogo.png'
+      image: 'resources/sponsor-logos/devmtnlogo2.png'
+    },
+    {
+      name: 'ConsultNet',
+      url: 'http://consultnet.com/',
+      level: 'gold',
+      image: 'resources/sponsor-logos/consultnetlogo.png'
     },
     {
       name: 'Plural Sight',
