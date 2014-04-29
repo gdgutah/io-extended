@@ -89,7 +89,7 @@ var options = {
     {
       name: 'Layers of Internet Safety',
       speaker: {
-        name: 'TBD',
+        name: 'James Eason',
         url: '',
         company: {
           name: '',
@@ -103,7 +103,7 @@ var options = {
     {
       name: 'Teaching Toddlers Programming',
       speaker: {
-        name: 'TBD',
+        name: 'Mike Clement',
         url: '',
         company: {
           name: '',
@@ -115,16 +115,17 @@ var options = {
       endTime: '12:45 PM'
     },
     {
-      name: 'Javascript as Your First Language',
+      name: 'LEGO Robotics',
       speaker: {
-        name: 'William Munn',
+        name: 'Peter Rich',
         url: '',
+        nophoto: true,
         company: {
           name: '',
           url: ''
         }
       },
-      track: 'Beginner',
+      track: 'Kids',
       startTime: '12:00 PM',
       endTime: '12:45 PM'
     },
@@ -145,8 +146,9 @@ var options = {
     {
       name: 'Learning Programming with Kahn Academy for Kids',
       speaker: {
-        name: 'TBD',
+        name: 'Jarom McDonald',
         url: '',
+        nophoto: true,
         company: {
           name: '',
           url: ''
@@ -164,8 +166,9 @@ var options = {
     {
       name: 'Arduino Autonomous Vehicle',
       speaker: {
-        name: 'TBD',
+        name: 'Steve Haladay',
         url: '',
+        nophoto: true,
         company: {
           name: '',
           url: ''
@@ -178,8 +181,9 @@ var options = {
     {
       name: 'Robotics with FIRST Lego League',
       speaker: {
-        name: 'TBD',
+        name: 'Cassandra Ivie',
         url: '',
+        nophoto: true,
         company: {
           name: '',
           url: ''
@@ -192,7 +196,7 @@ var options = {
     {
       name: 'For True Beginners',
       speaker: {
-        name: 'TBD',
+        name: 'Timothy Schimandle',
         url: '',
         company: {
           name: '',
@@ -234,7 +238,7 @@ var options = {
     {
       name: 'Learning Programming with Kahn Academy',
       speaker: {
-        name: 'TBD',
+        name: 'Timothy Schimandle',
         url: '',
         company: {
           name: '',
@@ -262,8 +266,9 @@ var options = {
     {
       name: 'Google Blockly: Visually Programming',
       speaker: {
-        name: 'TBD',
+        name: 'Brian Ivie',
         url: '',
+        nophoto: true,
         company: {
           name: '',
           url: ''
@@ -276,7 +281,7 @@ var options = {
     {
       name: 'Discussion Panel: Mothers in Tech',
       speaker: {
-        name: 'TBD',
+        name: 'Sariah Masterson',
         url: '',
         company: {
           name: '',
@@ -415,6 +420,8 @@ _.each(options.activities, function (activity) {
     var speakerDir = 'activities/sessions/' + simpleSessionName;
     activity.speaker.company.template = fs.readFileSync(speakerDir + '/company.html', 'utf8');
     activity.speaker.sessionTemplate = fs.readFileSync(speakerDir + '/session.html', 'utf8');
+    if (activity.speaker.nophoto)
+      simpleName = 'tbd';
     activity.speaker.photo = 'resources/speaker-photos/' + simpleName + '.jpg';
     console.log(activity.speaker.photo);
   }
