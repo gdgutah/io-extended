@@ -31,7 +31,7 @@ var options = {
       name: 'Keynote',
       speaker: {
         name: 'Aaron Frost',
-        url: 'https//plus.google.com/+AaronFrost/about',
+        url: 'https://plus.google.com/+AaronFrost/about',
         company: {
           name: 'GDG Utah',
           url: 'http://gdgut.com'
@@ -41,87 +41,18 @@ var options = {
       endTime: '10:45 AM'
     },
     {
-      name: 'For True Beginners',
+      name: 'So You Think You Want to Write Code?',
       speaker: {
-        name: 'TBD',
-        url: '#',
+        name: 'William Munn',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
+      track: 'Kids',
       startTime: '11:00 AM',
       endTime: '11:45 AM'
-    },
-    {
-      name: 'Hello Computer: computer basics',
-      speaker: {
-        name: 'TBD',
-        url: '#',
-        company: {
-          name: '',
-          url: '#'
-        }
-      },
-      startTime: '11:00 AM',
-      endTime: '11:45 AM'
-    },
-    {
-      name: 'How to teach your kids to code',
-      speaker: {
-        name: 'TBD',
-        url: '#',
-        company: {
-          name: '',
-          url: '#'
-        }
-      },
-      startTime: '11:00 AM',
-      endTime: '11:45 AM'
-    },
-    {
-      name: 'Angry Birds Hour of Code',
-      speaker: {
-        name: 'TBD',
-        url: '#',
-        company: {
-          name: '',
-          url: '#'
-        }
-      },
-      startTime: '12:00 AM',
-      endTime: '12:45 AM'
-    },
-    {
-      name: 'Getting Kids Involved in Coding',
-      speaker: {
-        name: 'TBD',
-        url: '#',
-        company: {
-          name: '',
-          url: '#'
-        }
-      },
-      startTime: '12:00 AM',
-      endTime: '12:45 AM'
-    },
-    {
-      name: 'Lunch',
-      startTime: '1:00 PM',
-      endTime: '1:45 PM'
-    },
-    {
-      name: 'Robotics with FIRST Lego League',
-      speaker: {
-        name: 'TBD',
-        url: '#',
-        company: {
-          name: '',
-          url: '#'
-        }
-      },
-      startTime: '2:00 PM',
-      endTime: '2:45 PM'
     },
     {
       name: 'Learning Web Development',
@@ -133,45 +64,208 @@ var options = {
           url: 'http://provowebacademy.com'
         }
       },
+      track: 'Beginner',
+      startTime: '11:00 AM',
+      endTime: '11:45 AM'
+    },
+    {
+      name: 'Scratch Programming for Beginners',
+      speaker: {
+        name: 'TBD',
+        url: '',
+        company: {
+          name: '',
+          url: ''
+        }
+      },
+      track: 'Beginner',
+      startTime: '11:00 AM',
+      endTime: '11:45 AM'
+    },
+    {
+      name: 'Layers of Internet Safety',
+      speaker: {
+        name: 'TBD',
+        url: '',
+        company: {
+          name: '',
+          url: ''
+        }
+      },
+      track: 'Non Programmer',
+      startTime: '11:00 AM',
+      endTime: '11:45 AM'
+    },
+    {
+      name: 'Teaching Toddlers Programming',
+      speaker: {
+        name: 'TBD',
+        url: '',
+        company: {
+          name: '',
+          url: ''
+        }
+      },
+      track: 'Kids',
+      startTime: '12:00 PM',
+      endTime: '12:45 PM'
+    },
+    {
+      name: 'Javascript as Your First Language',
+      speaker: {
+        name: 'William Munn',
+        url: '',
+        company: {
+          name: '',
+          url: ''
+        }
+      },
+      track: 'Beginner',
+      startTime: '12:00 PM',
+      endTime: '12:45 PM'
+    },
+    {
+      name: 'How to Get Kids Interested in Programming',
+      speaker: {
+        name: 'TBD',
+        url: '',
+        company: {
+          name: '',
+          url: ''
+        }
+      },
+      track: 'Non Programmer',
+      startTime: '12:00 PM',
+      endTime: '12:45 PM'
+    },
+    {
+      name: 'Learning Programming with Kahn Academy for Kids',
+      speaker: {
+        name: 'TBD',
+        url: '',
+        company: {
+          name: '',
+          url: ''
+        }
+      },
+      track: 'Kids',
+      startTime: '12:00 PM',
+      endTime: '12:45 PM'
+    },
+    {
+      name: 'Lunch',
+      startTime: '1:00 PM',
+      endTime: '1:45 PM'
+    },
+    {
+      name: 'Arduino Autonomous Vehicle',
+      speaker: {
+        name: 'TBD',
+        url: '',
+        company: {
+          name: '',
+          url: ''
+        }
+      },
+      track: 'Beginner',
       startTime: '2:00 PM',
       endTime: '2:45 PM'
     },
     {
-      name: 'Google Glass',
+      name: 'Robotics with FIRST Lego League',
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
+      track: 'Kids',
       startTime: '2:00 PM',
       endTime: '2:45 PM'
     },
     {
-      name: 'Family Internet Safety',
+      name: 'For True Beginners',
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
+      track: 'Beginner',
       startTime: '2:00 PM',
       endTime: '2:45 PM'
     },
     {
-      name: 'Raspberry Pi Coder',
+      name: "Blogging: The How To's",
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
+      track: 'Non Programmer',
+      startTime: '2:00 PM',
+      endTime: '2:45 PM'
+    },
+    {
+      name: 'How to "Hack" the Web',
+      speaker: {
+        name: 'Cahlan Sharp',
+        url: '',
+        company: {
+          name: 'DevMountain',
+          url: 'https://devmounta.in/'
+        }
+      },
+      track: 'Beginner',
+      startTime: '2:00 PM',
+      endTime: '2:45 PM'
+    },
+    {
+      name: 'Learning Programming with Kahn Academy',
+      speaker: {
+        name: 'TBD',
+        url: '',
+        company: {
+          name: '',
+          url: ''
+        }
+      },
+      track: 'Beginner',
+      startTime: '3:00 PM',
+      endTime: '3:45 PM'
+    },
+    {
+      name: 'Websites for Smarties',
+      speaker: {
+        name: 'William Munn',
+        url: '',
+        company: {
+          name: '',
+          url: ''
+        }
+      },
+      track: 'Beginner',
+      startTime: '3:00 PM',
+      endTime: '3:45 PM'
+    },
+    {
+      name: 'Google Blockly: Visually Programming',
+      speaker: {
+        name: 'TBD',
+        url: '',
+        company: {
+          name: '',
+          url: ''
+        }
+      },
+      track: 'Kids',
       startTime: '3:00 PM',
       endTime: '3:45 PM'
     },
@@ -179,14 +273,43 @@ var options = {
       name: 'Discussion Panel: Mothers in Tech',
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
+      track: 'Non Programmer',
       startTime: '3:00 PM',
       endTime: '3:45 PM'
+    },
+    {
+      name: 'Angry Birds Hour of Code',
+      speaker: {
+        name: 'TBD',
+        url: '',
+        company: {
+          name: '',
+          url: ''
+        }
+      },
+      track: 'All Day',
+      startTime: '',
+      endTime: ''
+    },
+    {
+      name: 'Rockets',
+      speaker: {
+        name: 'TBD',
+        url: '',
+        company: {
+          name: '',
+          url: ''
+        }
+      },
+      track: 'All Day',
+      startTime: '',
+      endTime: ''
     }
   ],
   prizes: [
@@ -200,8 +323,58 @@ var options = {
   ],
   sponsors: [
     {
-      name: 'Google',
-      url: 'http://www.google.com'
+      name: 'BlueHost',
+      url: 'http://www.bluehost.com',
+      image: 'resources/sponsor-logos/bluehostlogo.png',
+      level: 'premier'
+    },
+    {
+      name: 'Google Fiber',
+      url: 'https://fiber.google.com/about/',
+      level: 'platinum',
+      image: 'resources/sponsor-logos/fiberlogo.png'
+    },
+    {
+      name: 'AtTask',
+      url: 'http://www.attask.com',
+      image: 'resources/sponsor-logos/attasklogo.png',
+      level: 'platinum'
+    },
+    {
+      name: 'DojoDevCamp',
+      url: 'http://dojodevcamp.com/',
+      level: 'platinum',
+      image: 'resources/sponsor-logos/dojologo.png'
+    },
+    {
+      name: 'Domo',
+      url: 'http://www.domo.com/',
+      level: 'platinum',
+      image: 'resources/sponsor-logos/domologo.png'
+    },
+    {
+      name: 'DevMountain',
+      url: 'http://devmounta.in/',
+      level: 'gold',
+      image: 'resources/sponsor-logos/devmtnlogo2.png'
+    },
+    {
+      name: 'ConsultNet',
+      url: 'http://consultnet.com/',
+      level: 'gold',
+      image: 'resources/sponsor-logos/consultnetlogo.png'
+    },
+    {
+      name: 'Plural Sight',
+      url: 'http://www.pluralsight.com/',
+      level: 'gold',
+      image: 'resources/sponsor-logos/pluralsightlogo.png'
+    },
+    {
+      name: 'Provo Web Academy',
+      url: 'http://provowebacademy.com/',
+      level: 'silver',
+      image: 'resources/sponsor-logos/pwalogo.png'
     }
   ],
   hotels: [
@@ -229,6 +402,8 @@ var options = {
   eventBrightId: '8243355097'
 };
 
+options.tracks = {};
+
 _.each(options.activities, function (activity) {
   if (activity.speaker) {
     var simpleSessionName = activity.name.replace(/ |\//g, '-').toLowerCase();
@@ -239,6 +414,24 @@ _.each(options.activities, function (activity) {
     activity.speaker.photo = 'resources/speaker-photos/' + simpleName + '.jpg';
     console.log(activity.speaker.photo);
   }
+
+  // Configure tracks
+  if (!activity.track) {
+    if (!options.tracks['General Events']) {
+      options.tracks['General Events'] = {};
+      options.tracks['General Events'].name = 'General Events';
+      options.tracks['General Events'].track = [];
+    }
+    options.tracks['General Events'].track.push(activity);
+  } else {
+    if (!options.tracks[activity.track]) {
+      options.tracks[activity.track] = {};
+      options.tracks[activity.track].name = activity.track;
+      options.tracks[activity.track].track = [];
+    }
+    options.tracks[activity.track].track.push(activity);
+  }
+
 });
 
 var html = jade.renderFile('index.jade', options);

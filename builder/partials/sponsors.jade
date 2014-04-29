@@ -1,6 +1,10 @@
 .container
   h2 Sponsored By
-  ul
+  ul(class='sponsors')
     each sponsor in sponsors
-      li
-        a(href= sponsor.url) #{sponsor.name}
+      li(class= sponsor.level + ' sponsor')
+        a(href= sponsor.url)
+          if sponsor.image
+            img(src= sponsor.image)
+          else
+            = sponsor.name

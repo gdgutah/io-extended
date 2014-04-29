@@ -12,6 +12,12 @@ a, a:visited {color:#59a0dd;}
   text-indent: -999em;
   overflow: hidden;
 }
+a.anchor {
+  display: block;
+  position: relative;
+  top: -88px;
+  visibility: hidden;
+}
 .clear:after {
   content: '';
   clear: both;
@@ -344,7 +350,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 }
 
 .speaker-info {
-
+    
 }
 .speaker-name {
     font-weight: 700;
@@ -532,3 +538,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 #subtochange{
   color:black;
 }
+
+.sponsors{
+  list-style: none;
+  padding: 10px;
+}
+.sponsors .sponsor{
+  margin: 20px;
+  text-align: center;
+  margin-bottom:70px;
+
+}
+.sponsors .sponsor a{
+  width: 100%;
+
+}
+.sponsors .sponsor.premier a img{
+  width: 100%;
+}
+.sponsors .sponsor.platinum a{
+  font-size:90px;
+}
+.sponsors .sponsor.platinum a img{
+  width: 70%;
+}
+.sponsors .sponsor.gold a{
+  font-size:70px;
+}
+.sponsors .sponsor.gold a img{
+  width: 45%;
+}
+.sponsors .sponsor.silver a{
+  font-size:50px;
+}
+.sponsors .sponsor.silver a img{
+  width: 45%;
+}
+
+
