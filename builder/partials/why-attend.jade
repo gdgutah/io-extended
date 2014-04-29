@@ -1,5 +1,5 @@
 .container
-  a(name='whyattend')
+  a(class='anchor' name='whyattend')
   h2 Why Attend?
   //.pull-right.prizes
   //  h3 Free Stuff!
@@ -20,4 +20,5 @@
     each s in swag
       li #{s}
   p
-    <div><a class="buy button" href="https://ti.to/devfestfamily/devfestfamily" target="_blank">Buy A Ticket</a></div>
+    div
+      a(class="buy button",href="https://ti.to/devfestfamily/devfestfamily",target="_blank") Buy A Ticket

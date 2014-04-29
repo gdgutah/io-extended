@@ -1,5 +1,14 @@
 .container
   h2 Buy Tickets
-  a(name='buytickets')
+  a(class='anchor',name='buytickets')
   div(style='width: 100%; text-align: left;')
-    iframe(src= 'http://www.eventbrite.com/tickets-external?eid=' + eventBrightId + '&ref=etckt&v=2', frameborder='0', height='485', width='100%', vspace='0', hspace='0', marginheight='5', marginwidth='5', scrolling='auto', allowtransparency='true')
+    iframe(src= 'http://www.eventbrite.com/tickets-external?eid=' + eventBrightId + '&ref=etckt&v=2',
+      frameborder='0',
+      height='485',
+      width='100%',
+      vspace='0',
+      hspace='0',
+      marginheight='5',
+      marginwidth='5',
+      scrolling='auto',
+      allowtransparency='true')

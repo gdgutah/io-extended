@@ -2,7 +2,7 @@
   h2 Sponsored By
   ul(class='sponsors')
     each sponsor in sponsors
-      li(class= [sponsor.level, 'sponsor'])
+      li(class= sponsor.level + ' sponsor')
         a(href= sponsor.url)
           if sponsor.image
             img(src= sponsor.image)

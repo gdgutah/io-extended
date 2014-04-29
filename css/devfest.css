@@ -12,6 +12,12 @@ a, a:visited {color:#59a0dd;}
   text-indent: -999em;
   overflow: hidden;
 }
+a.anchor {
+  display: block;
+  position: relative;
+  top: -88px;
+  visibility: hidden;
+}
 .clear:after {
   content: '';
   clear: both;
