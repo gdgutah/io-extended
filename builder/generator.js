@@ -44,10 +44,10 @@ var options = {
       name: 'So You Think You Want to Write Code?',
       speaker: {
         name: 'William Munn',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'Kids',
@@ -65,17 +65,17 @@ var options = {
         }
       },
       track: 'Beginner',
-      startTime: '11:00 PM',
-      endTime: '11:45 PM'
+      startTime: '11:00 AM',
+      endTime: '11:45 AM'
     },
     {
       name: 'Scratch Programming for Beginners',
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'Beginner',
@@ -86,38 +86,38 @@ var options = {
       name: 'Layers of Internet Safety',
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'Non Programmer',
-      startTime: '11:00 PM',
-      endTime: '11:45 PM'
+      startTime: '11:00 AM',
+      endTime: '11:45 AM'
     },
     {
       name: 'Teaching Toddlers Programming',
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'Kids',
-      startTime: '12:00 AM',
-      endTime: '12:45 AM'
+      startTime: '12:00 PM',
+      endTime: '12:45 PM'
     },
     {
       name: 'Javascript as Your First Language',
       speaker: {
         name: 'William Munn',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'Beginner',
@@ -128,10 +128,10 @@ var options = {
       name: 'How to Get Kids Interested in Programming',
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'Non Programmer',
@@ -142,15 +142,15 @@ var options = {
       name: 'Learning Programming with Kahn Academy for Kids',
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'Kids',
-      startTime: '12:00 AM',
-      endTime: '12:45 AM'
+      startTime: '12:00 PM',
+      endTime: '12:45 PM'
     },
     {
       name: 'Lunch',
@@ -161,24 +161,24 @@ var options = {
       name: 'Arduino Autonomous Vehicle',
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'Beginner',
-      startTime: '2:00 AM',
-      endTime: '2:45 AM'
+      startTime: '2:00 PM',
+      endTime: '2:45 PM'
     },
     {
       name: 'Robotics with FIRST Lego League',
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'Kids',
@@ -189,10 +189,10 @@ var options = {
       name: 'For True Beginners',
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'Beginner',
@@ -203,10 +203,10 @@ var options = {
       name: "Blogging: The How To's",
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'Non Programmer',
@@ -217,7 +217,7 @@ var options = {
       name: 'How to "Hack" the Web',
       speaker: {
         name: 'Cahlan Sharp',
-        url: '#',
+        url: '',
         company: {
           name: 'DevMountain',
           url: 'https://devmounta.in/'
@@ -231,52 +231,52 @@ var options = {
       name: 'Learning Programming with Kahn Academy',
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'Beginner',
-      startTime: '3:00 AM',
-      endTime: '3:45 AM'
+      startTime: '3:00 PM',
+      endTime: '3:45 PM'
     },
     {
       name: 'Websites for Smarties',
       speaker: {
         name: 'William Munn',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'Beginner',
-      startTime: '3:00 AM',
-      endTime: '3:45 AM'
+      startTime: '3:00 PM',
+      endTime: '3:45 PM'
     },
     {
       name: 'Google Blockly: Visually Programming',
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'Kids',
-      startTime: '3:00 AM',
-      endTime: '3:45 AM'
+      startTime: '3:00 PM',
+      endTime: '3:45 PM'
     },
     {
       name: 'Discussion Panel: Mothers in Tech',
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'Non Programmer',
@@ -287,10 +287,10 @@ var options = {
       name: 'Angry Birds Hour of Code',
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'All Day',
@@ -301,10 +301,10 @@ var options = {
       name: 'Rockets',
       speaker: {
         name: 'TBD',
-        url: '#',
+        url: '',
         company: {
           name: '',
-          url: '#'
+          url: ''
         }
       },
       track: 'All Day',
