@@ -1,6 +1,25 @@
 .container
+  div.social
+    div.wide
+      div.left
+        a(href="http://twitter.com/share",class="twitter-share-button",data-url= baseUrl,data-via="gdgutah",data-text="A conference for the whole family",data-hashtags="DevFestFam",data-lang="en") Tweet
+        div(class="g-plusone",data-size="medium",data-annotation="inline",data-width="300",data-href= baseUrl)
+      div.right
+        div(class="g-follow",data-annotation="bubble",data-height="20",data-href= googlePlus,data-rel="author")
+        span.margin-left-small
+          a(href= twitter,class="twitter-follow-button",data-show-count="true",data-lang="en") Follow @gdgutah
+    div.small
+      div.left
+        a(href="http://twitter.com/share",class="twitter-share-button",data-url= baseUrl,data-via="gdgutah",data-text="A conference for the whole family",data-hashtags="DevFestFam",data-lang="en",data-count="none") Tweet
+        span.margin-left-small
+          div(class="g-plusone",data-size="medium",data-annotation="none",data-href =baseUrl)
+      div.right
+        div(class="g-follow",data-annotation="none",data-height="20",data-href= googlePlus,data-rel="publisher")
+        span.margin-left-small
+          a(href= twitter,class="twitter-follow-button",data-show-count="false",data-lang="en") Follow
   div.logo-container
-    img#gdglogo(src='resources/devfest-logo.png')
+    a(href= googlePlus,target='_blank')
+      img#gdglogo(src='resources/devfest-logo-sold-out.png')
   p.subtitle
     | Orem, UT
     br
@@ -17,7 +36,10 @@
       | some amazing door prizes. We are hoping to give away a Raspberry Pi to each family that attends (while supplies last). If you have any
       | questions, please direct them to <a href="mailto:info@devfestfam.com">info@devfestfam.com</a>.
     p
-      a(class="buy button" href="https://ti.to/devfestfamily/devfestfamily" target="_blank") Register
+      a(class='buy-button sold-out') Register
+      span We sold out! But don't worry, we're doing another event in the fall. Follow our&nbsp;
+        a(href= googlePlus,target='_blank') Google+ Page
+        |  for updates.
     p.who
       | A local effort by
       each helper in helpers

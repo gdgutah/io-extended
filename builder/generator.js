@@ -2,12 +2,16 @@ var jade = require('jade');
 var fs = require('fs');
 var _ = require('lodash-node');
 
-var googlePlus = 'https://plus.google.com/111917982940065392922';
+var googlePlus = 'https://plus.google.com/+Gdgut';
 var facebook = 'https://www.facebook.com/gdgutdev';
+var twitter = 'https://twitter.com/gdgutah';
+var baseUrl = 'http://devfestfam.com';
 
 var options = {
   googlePlus: googlePlus,
   facebook: facebook,
+  twitter: twitter,
+  baseUrl: baseUrl,
   helpers: [
     {
       name: ' GDG Utah',

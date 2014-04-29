@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: Arial,sans-serif;
   min-width: 320px;
-
+  background-color: #FEFEFE;
 }
 * { font-family: 'Open Sans',Arial }
 a, a:visited {color:#59a0dd;}
@@ -168,6 +168,11 @@ header .present {
 header .show-iphone {
   display:none;
 }
+
+.social .small {
+  display: none;
+}
+
 @media (max-width:400px) {
   header .hide-iphone {
     display:none;
@@ -201,6 +206,21 @@ header .show-iphone {
     header ul li.sponsor {
         display: block;
         float: right;
+    }
+    a.anchor {
+      top: -41px;
+    }
+    .spacer {
+      padding-top: 41px;
+    }
+    .social {
+      margin-top: 6px;
+    }
+    .social .wide {
+      display: none;
+    }
+    .social .small {
+      display: block;
     }
 }
 @media (min-width:895px) {
@@ -285,11 +305,27 @@ color: #999;
   padding-top: 8px;
 }
 
+.social {
+  margin-top: 20px;
+}
+
+.social .left {
+  float: left;
+}
+
+.social .right {
+  float: right;
+}
+
+.margin-left-small {
+  margin-left: 6px;
+}
+
 .day-name {
   font-size: 30px;
 }
 
-.buy.button{
+.buy-button{
   padding:10px;
   border:1px solid gray;
   display:inline-block;
@@ -302,9 +338,15 @@ color: #999;
   background: -ms-linear-gradient(top,  rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* IE10+ */
   background: linear-gradient(to bottom,  rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+}
+.buy-button, .buy-button:hover, .buy-button:active, .buy-button:focus {
   color:black;
   text-decoration: none;
-
+}
+.buy-button.sold-out {
+  cursor: default;
+  opacity: 0.5;
+  margin-right: 10px;
 }
 
 .speaker-box {
