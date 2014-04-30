@@ -73,20 +73,6 @@ var options = {
       endTime: '11:45 AM'
     },
     {
-      name: 'Scratch Programming for Beginners',
-      speaker: {
-        name: 'TBD',
-        url: '',
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'Beginner',
-      startTime: '11:00 AM',
-      endTime: '11:45 AM'
-    },
-    {
       name: 'Layers of Internet Safety',
       speaker: {
         name: 'James Eason',
@@ -119,7 +105,6 @@ var options = {
       speaker: {
         name: 'Peter Rich',
         url: '',
-        nophoto: true,
         company: {
           name: '',
           url: ''
@@ -132,7 +117,7 @@ var options = {
     {
       name: 'How to Get Kids Interested in Programming',
       speaker: {
-        name: 'TBD',
+        name: 'Stacie Farmer',
         url: '',
         company: {
           name: '',
@@ -168,7 +153,6 @@ var options = {
       speaker: {
         name: 'Steve Haladay',
         url: '',
-        nophoto: true,
         company: {
           name: '',
           url: ''
@@ -208,9 +192,10 @@ var options = {
       endTime: '2:45 PM'
     },
     {
-      name: "Blogging: The How To's",
+      name: "Blogging and Social Media",
       speaker: {
-        name: 'TBD',
+        name: 'Gabe Villamizar',
+        nophoto: true,
         url: '',
         company: {
           name: '',
@@ -236,7 +221,7 @@ var options = {
       endTime: '2:45 PM'
     },
     {
-      name: 'Learning Programming with Kahn Academy',
+      name: 'Learning Programming with Code Academy',
       speaker: {
         name: 'Timothy Schimandle',
         url: '',
