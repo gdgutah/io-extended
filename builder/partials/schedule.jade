@@ -2,6 +2,7 @@
   a(class='anchor',name='agenda')
   h2 Agenda
   .speaker-box.bordered-shadowed
+    div(class="current-time-arrow" style="margin: 10px;padding-top: 5px;") means that's happening right now!
     each track in tracks
       h3 #{track.name}
       table.table.table-bordered.table-striped
@@ -12,10 +13,12 @@
           each activity in track.track
             tr
               if activity.startTime && activity.endTime
-                td
-                  | #{activity.startTime} - #{activity.endTime}
+                td.activity
+                  span.start-time #{activity.startTime}
+                  span  -&nbsp;
+                  span.end-time #{activity.endTime}
               else
-                td
+                td.all-day
                   | All Day
               td
                 if activity.speaker
@@ -23,7 +26,7 @@
                 else
                   span #{activity.name}
     p#subtochange
-      | (Agenda is still subject to change, please head over to
+      | (Agenda is still subject to change, please head over to&nbsp;
       a(href='http://www.utahgeekevents.com/Event/DevFestFamily2014/Sessions',target='_blank') UtahGeekEvents.com
       |  to see more proposed sessions)
   .clear
