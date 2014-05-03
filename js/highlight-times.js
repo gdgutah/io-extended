@@ -7,6 +7,10 @@
   if (now.getDate() !== DFF.eventDate.getDate() ||
     now.getMonth() !== DFF.eventDate.getMonth() ||
     now.getFullYear() !== DFF.eventDate.getFullYear()) {
+    var happeningNow = document.querySelector('.happening-now-note');
+    if (happeningNow.parentNode) {
+      happeningNow.parentNode.removeChild(happeningNow);
+    }
     return;
   }
 
