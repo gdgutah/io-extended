@@ -38,20 +38,11 @@ head
       section#conversation
         include partials/conversation
     script.
-      var mediaQuery = window.matchMedia("(min-width: 750px)");
-      var mediaQueryCallback = function () {
-        var map = document.getElementById('location-map-embed');
-        var link = document.getElementById('location-map-link');
-        if (mediaQuery.matches) {
-          map.className = '';
-          link.className = 'hide';
-        } else {
-          link.className = '';
-          map.className = 'hide';
-        }
+      var DFF = {
+        eventDate: new Date('#{date.full}')
       };
-      mediaQuery.addListener(mediaQueryCallback);
-      mediaQueryCallback();
+    script(src="js/map-media-query.js", type="text/javascript")
+    script(src="js/highlight-times.js", type="text/javascript")
     //
        Twitter stuff 
     script.

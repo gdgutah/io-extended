@@ -370,6 +370,47 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 
 }
 
+.current-time-circle {
+  position: relative;
+}
+
+.current-time-circle:before {
+  position: absolute;
+  right: 14px;
+  background: #F00;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  content: "";
+  top: 5px;
+}
+
+.current-time-circle:after {
+  position: absolute;
+  background: #F9F9F9;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  content: "";
+  top: 8px;
+  right: 17px;
+}
+
+.current-time-arrow {
+  position: relative;
+}
+
+.current-time-arrow:after {
+  position: absolute;
+  left: -16px;
+  background: #F9F9F9;
+  content: "";
+  top: 5px;
+  border: 10px solid #F9F9F9;
+  border-right: none #36AC2B;
+  border-left-color: #36AC2B;
+}
+
 .speaker-inner-box {
 
 }
