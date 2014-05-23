@@ -2,16 +2,22 @@ module.exports = function(grunt){
 
   // Project configuration.
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-    exec:{
-      generator: {
-        cmd: 'node generator.js'
+    jade: {
+      main: {
+        options: {
+          data: function() {
+            return require('./data')();
+          }
+        },
+        files: {
+          '../index.html': 'index.jade'
+        }
       }
     },
     watch: {
       scripts: {
         files: ['*.js', '**/*.html', '**/*.jade', '!node_modules/**/*.*'],
-        tasks: ['exec:generator'],
+        tasks: ['jade'],
         options: {
           interrupt: true
         }
@@ -21,8 +27,8 @@ module.exports = function(grunt){
   });
 
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-exec');
+  grunt.loadNpmTasks('grunt-contrib-jade');
 
   grunt.registerTask('dev',['watch:scripts']);
-  grunt.registerTask('default', 'exec');
+  grunt.registerTask('default', 'jade:main');
 };

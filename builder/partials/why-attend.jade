@@ -1,27 +1,20 @@
 .container
   a(class='anchor' name='whyattend')
   h2 Why Attend?
-  //.pull-right.prizes
-  //  h3 Free Stuff!
-  //  ul
-  //    each prize in prizes
-  //      li #{prize}
   p(itemprop='description')
-    | DevFestFamily is not a typical tech conference, as it's focus is on the entire family. With so many jobs being
-    | replaced by software, the importance of teaching Utah's children the skills of coding has never been higher.
-    | DevFestFamily aims to bring code to those who have never coded, and help train those who are already familiar with
-    | coding principles. With this we hope to prepare Utahn's to cope with a job market that is dramatically shifting
-    | towards development jobs.
-  p
-    | For a better understanding of why we think you should attend, please watch
-    | <a href="https://www.youtube.com/watch?v=nKIu9yen5nc" target="_blank">THIS VIDEO</a> from <a href="http://www.code.org" target="_blank">code.org</a>.
+    | I/O Extended includes live streaming sessions and a hackathon. This event is brought to you by our local
+    | Google Developer Group and made possible by&nbsp;
+    a(href="#sponsors") the sponsors
+    | .
+  .pull-right.prizes
+    h3 Free Stuff!
+    ul
+      each prize in prizes
+        li #{prize}
   h4 Admission Includes:
   ul
     each s in swag
       li #{s}
   p
     div
-      a(class='buy-button sold-out') Buy A Ticket
-      span We sold out! But don't worry, we're doing another event in the fall. Follow our&nbsp;
-        a(href= googlePlus,target='_blank') Google+ Page
-        |  for updates.
+      a(class='buy-button' href="#buytickets") Buy A Ticket

@@ -1,9 +1,9 @@
 {
-  "name": "devfestfam.com",
+  "name": "gdgutah io-extended",
   "version": "0.0.1",
   "private": true,
-  "description": "This is for building the devfestfam website with jade.",
-  "homepage": "https://github.com/gdgutah/devfestfam.com",
+  "description": "This is for building the gdgut.com/io-extended website with jade.",
+  "homepage": "https://github.com/gdgutah/io-extended",
   "authors": [
     "Kent C. Dodds <kent@doddsfamily.us>",
     "Aaron Frost <aaronfrost@gmail.com>"
@@ -14,10 +14,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "jade": "~1.1.5",
-    "lodash-node": "~2.4.1",
     "grunt": "~0.4.2",
-    "grunt-exec": "~0.4.5",
+    "jade": "~1.1.5",
+    "grunt-contrib-jade": "^0.11.0",
     "grunt-contrib-watch": "~0.5.3"
   }
 }

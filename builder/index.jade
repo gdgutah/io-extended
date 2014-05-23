@@ -3,38 +3,36 @@ html(itemscope='', itemtype='http://schema.org/Event')
 head
   meta(charset='utf-8')
   meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-  meta(name='description', content='DevFestFam')
+  meta(name='description', content='Google IO Extended Utah')
   meta(name='viewport', content='width=device-width,initial-scale=1.0')
-  meta(itemprop='name', content='DevFest Family')
+  meta(itemprop='name', content='Google IO Extended Utah')
   link(href='https://plus.google.com/111439872924209508980', rel='publisher')
   link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,800', rel='stylesheet', type='text/css')
-  link(href='css/devfest.css', rel='stylesheet', type='text/css')
+  link(href='css/styles.css', rel='stylesheet', type='text/css')
   link(href='vendor/bootstrap.min.css', rel='stylesheet', type='text/css')
   link(href="resources/favicon.ico", rel="icon", type="image/x-icon")
-  title DevFest Family 2014
+  title Google IO Extended Utah 2014
   script.
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-49769569-1', 'devfestfam.com');
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', '#{analytics.trackingId}', 'analytics.url');
     ga('send', 'pageview');
-  body(ng-controller='MainCtrl')
+  body
     header 
       include partials/header
     .spacer
       section.white
         include partials/helpers
-      section.blue
-        include partials/schedule
       section.gray
         include partials/why-attend
       section.blue
         include partials/sponsors
       section#travelandlocation.white
         include partials/location
-      //section.blue
-      //  include partials/tickets
+      section.blue
+        include partials/tickets
       section#conversation
         include partials/conversation
     script.
