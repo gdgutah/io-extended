@@ -1,6 +1,19 @@
 module.exports = function() {
   var twitterHandle = 'gdgutah';
   var googlePlus = 'https://plus.google.com/+Gdgut';
+  var additionalDetails = [
+    '<p>'
+    ,'<strong>In addition to</strong> streaming Google I/O Sessions live,'
+    ,'I/O Extended Utah will host a codelab that has to do with some new'
+    ,'technologies that will be announced on Day 1 of Google I/O. During'
+    ,'Day 2 of I/O Extended, we will hold a codelab around these new changes.'
+    ,'Google has been extremely generous and has provided us some of the'
+    ,'<strong>new, not-even-released Android Wearables</strong> that we can'
+    ,'give to the winners of the codelab. Judging will happen live at the event.'
+    ,'The organizers and the sponsors will be the judges. This will be a very'
+    ,'fun and informative event that you won\'t want to miss.'
+    ,'</p>'
+  ].join(' ');
 
   var data = {
     social: {
@@ -78,6 +91,7 @@ module.exports = function() {
       'Google Developer Group and made possible by <a href="#sponsors">the sponsors</a>.'
     ].join(' ')
   };
+  data.contentText.top+=additionalDetails;
 
   return data;
 };
