@@ -23,7 +23,7 @@ module.exports = function() {
       twitterHandle: twitterHandle,
       hashtag: 'io14extended'
     },
-    baseUrl: 'http://gdgut.com',
+    baseUrl: 'http://gdgut.com/io-extended',
     gdgGroupName: 'GDG Utah',
     helpers: [
       {
