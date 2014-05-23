@@ -1,16 +1,17 @@
 module.exports = function() {
-  console.log('in data');
-
+  var twitterHandle = 'gdgutah';
   var googlePlus = 'https://plus.google.com/+Gdgut';
-  var facebook = 'https://www.facebook.com/gdgutdev';
-  var twitter = 'https://twitter.com/gdgutah';
-  var baseUrl = 'http://gdgut.com';
 
-  return {
-    googlePlus: googlePlus,
-    facebook: facebook,
-    twitter: twitter,
-    baseUrl: baseUrl,
+  var data = {
+    social: {
+      googlePlus: googlePlus,
+      facebook: 'https://www.facebook.com/gdgutdev',
+      twitter: 'https://twitter.com/' + twitterHandle,
+      twitterHandle: twitterHandle,
+      hashtag: 'io14extended'
+    },
+    baseUrl: 'http://gdgut.com',
+    gdgGroupName: 'GDG Utah',
     helpers: [
       {
         name: ' GDG Utah',
@@ -63,4 +64,20 @@ module.exports = function() {
     }
   };
 
+  data.location.cityState = data.location.city + ', ' + data.location.state;
+  data.fullName = 'Google I/O Extended ' + data.location.cityState;
+
+  data.contentText = {
+    top: [
+      data.fullName + ' is a place where developers and Google fans can get together and geek out for two days',
+      'about all the cool things happening at Google I/O. It\'s going to be a good time. Tickets are limited and',
+      'will go fast so make sure to pick up yours asap!'
+    ].join(' '),
+    whyAttend: [
+      'I/O Extended includes live streaming sessions and a hackathon. This event is brought to you by our local',
+      'Google Developer Group and made possible by <a href="#sponsors">the sponsors</a>.'
+    ].join(' ')
+  };
+
+  return data;
 };

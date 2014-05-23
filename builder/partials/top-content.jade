@@ -1,0 +1,34 @@
+.container
+  div.social
+    div.wide
+      div.left
+        a(href="http://twitter.com/share",class="twitter-share-button",data-url= baseUrl,data-via="#{social.twitterHandle}", data-text= fullName,data-hashtags="#{social.hashtag}",data-lang="en") Tweet
+        div(class="g-plusone",data-size="medium",data-annotation="inline",data-width="300",data-href= baseUrl)
+      div.right
+        div(class="g-follow",data-annotation="bubble",data-height="20",data-href= social.googlePlus,data-rel="author")
+        span.margin-left-small
+          a(href= social.twitter,class="twitter-follow-button",data-show-count="true",data-lang="en") Follow @#{social.twitterHandle}
+    div.small
+      div.left
+        a(href="http://twitter.com/share",class="twitter-share-button",data-url= baseUrl,data-via= social.twitterHandle, data-text= fullName, data-hashtags="#{social.hashtag}",data-lang="en",data-count="none") Tweet
+        span.margin-left-small
+          div(class="g-plusone",data-size="medium",data-annotation="none",data-href =baseUrl)
+      div.right
+        div(class="g-follow",data-annotation="none",data-height="20",data-href= social.googlePlus,data-rel="publisher")
+        span.margin-left-small
+          a(href= twitter,class="twitter-follow-button",data-show-count="false",data-lang="en") Follow
+  div.logo-container
+    a(href= social.googlePlus,target='_blank')
+      img#gdglogo(src='resources/generic-io-logo-wide.png')
+  p.subtitle
+    | #{location.city}, #{location.state}
+    br
+    | #{date.full}
+  .col-md-5
+    p !{contentText.top}
+
+    a(class='buy-button' href="#buytickets") Buy Tickets
+    p.who
+      | A local effort by&nbsp;
+      each helper in helpers
+        a(href= helper.url) #{helper.name}
