@@ -2,7 +2,7 @@
 
 Repo for the Google I/O Extended Utah website.
 
-![Google I/O Extended Utah logo](resources/generic-io-logo-wide.png)
+![Google I/O Extended Utah logo](resources/io-extended-logo-wide.png)
 
 ## Making Changes
 

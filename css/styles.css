@@ -452,13 +452,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 .logo-container {
   text-align: center;
 }
-#gdglogo { max-width: 90%;}
+.gdglogo { 
+  max-width: 90%;
+}
+
+.gdglogo.large {
+  display: none;
+}
 
 
-@media (min-width:700px) {
-  #gdglogo {
+@media (min-width:894px) {
+  .gdglogo.small {
+    display: none;
+  }
+  .gdglogo.large {
     width: 650px;
     margin-top: 10px;
+    display: block;
   }
 
 }
