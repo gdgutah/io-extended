@@ -57,7 +57,7 @@ module.exports = function() {
       mapUrl: 'https://www.google.com/maps/place/Neumont+University/@40.766112,-111.890576,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x984de330faa39cd6',
       embedUrl: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3021.8141593866076!2d-111.890576!3d40.766112!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x984de330faa39cd6!2sNeumont+University!5e0!3m2!1sen!2sus!4v1400809830688'
     },
-    eventBrightId: 'TODO',
+    eventBrightId: '11732575449',
     analytics: {
       trackingId: 'UA-51273424-1',
       url: 'gdgut.com'
